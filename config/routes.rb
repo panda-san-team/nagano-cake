@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     registrations: "public/registrations",
     sessions: 'public/sessions'
   }
-  
+
   scope module: :public do
     resource :customers, only: [:show,:edit,:update]
     get '/customers/quit' => 'customers#quit'
@@ -27,7 +27,7 @@ Rails.application.routes.draw do
     get '/about' => 'homes#about', as: 'about'
 
   end
-  
+
   namespace :admin do
     resources :customers, only: [:index,:show,:update,:edit]
     resources :orders, only: [:index,:show,:update]
