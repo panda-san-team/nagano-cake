@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :admins,skip: [:registrations, :passwords], controllers: {
+  devise_for :admin,skip: [:registrations, :passwords], controllers: {
     sessions: "admin/sessions"
   }
   devise_for :customers,skip: [:passwords], controllers: {
@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   scope module: :public do
     resource :customers, only: [:show,:edit,:update]
     get '/customers/quit' => 'customers#quit'
-    get '/customers/out' => 'customers#out'
+    patch '/customers/out' => 'customers#out'
 
     resources :addresses, only: [:index,:create,:edit,:update,:destroy]
     resources :cart_items, only: [:index,:update,:destroy,:create] do
@@ -18,14 +18,13 @@ Rails.application.routes.draw do
         delete '/destroy_all' => 'cart_items#destroy_all'
       end
     end
-    resources :orders, only: [:new,:create,:index,:show] do
-      post '/confirm' => 'orders#confirm'
-      get '/thanks' => 'orders#thanks'
-    end
+    resources :orders, only: [:new,:create,:index,:show]
+    post '/orders/confirm' => 'orders#confirm'
+    get '/orders/thanks' => 'orders#thanks'
 
     resources :items, only: [:index,:show]
-    root to: 'items#top'
-    get '/about' => 'items#about'
+    root to: 'homes#top'
+    get '/about' => 'homes#about', as: 'about'
 
   end
 
