@@ -6,12 +6,12 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <% if customer_signed_in? %>
+      <% if admin_signed_in? %>
       <ul class="navbar-nav">
         <li><%= link_to "商品一覧", admin_items_path, class: "btn btn-outline-success" %></li>
         <li><%= link_to "会員一覧", admin_customers_path, class: "btn btn-outline-success" %></li>
         <li><%= link_to "注文履歴一覧", admin_orders_path, class: "btn btn-outline-success" %></li>
-        <li><%= link_to "ジャンル一覧", admin_jenres_path, class: "btn btn-outline-success" %></li>
+        <li><%= link_to "ジャンル一覧", admin_genres_path, class: "btn btn-outline-success" %></li>
         <li><%= link_to "ログアウト", destroy_admin_session_path, method: :delete, class: "btn btn-outline-success" %></li>
       <% else %>
         <li><%= link_to "About", about_path, class: "btn btn-outline-success" %></li>
