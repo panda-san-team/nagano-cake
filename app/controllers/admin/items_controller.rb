@@ -41,6 +41,9 @@ class Admin::ItemsController < ApplicationController
       params.require(:item).permit(:image,:name,:introduction,:genre_id,:price,:is_active)
     end
 
+    def add_tax_price
+  　  (self.price * 1.1).round
+　  end
 
 
 end
