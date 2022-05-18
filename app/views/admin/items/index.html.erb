@@ -1,0 +1,29 @@
+<h2>商品一覧</h2>
+<%= link_to new_admin_item_path do %>
+  <button class="button">
+    <i class="far fa-plus-circle"></i>
+  </button>
+<% end %>
+
+<% @items.each do |item| %>
+<table class="table">
+  <thead>
+    <tr>
+      <th>商品ID</th>
+      <th>商品名</th>
+      <th>税抜き価格</th>
+      <th>ジャンル</th>
+      <th>ステータス</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= item.id %></td>
+      <td><%= item.name %></td>
+      <td><%= item.price %></td>
+      <td><%= genre_id %></td>
+      <td><%= f.select :is_active ,[['販売中',true],['販売停止中',false]] %></td>
+    </tr>
+  </tbody>
+</table>
+<% end %>
