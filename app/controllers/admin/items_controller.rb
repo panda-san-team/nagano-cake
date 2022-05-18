@@ -20,6 +20,7 @@ class Admin::ItemsController < ApplicationController
       redirect_to :show
     else
       render :new
+    end
   end
 
   def edit
@@ -39,7 +40,7 @@ class Admin::ItemsController < ApplicationController
     def item_params
       params.require(:item).permit(:image,:name,:introduction,:genre_id,:price,:is_active)
     end
-  end
+
 
 
 end
