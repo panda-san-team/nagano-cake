@@ -14,6 +14,11 @@ class Public::CustomersController < ApplicationController
   end
 
   def quit
+    @customer = Customer.find_by(params[:id])
+    @customer.update(is_deleted: true)
+    reset_session
+    flash[:notice] = "またのご利用をお待ちしております"
+    redirect_to root_path
   end
 
   def out
