@@ -14,9 +14,9 @@ class Item < ApplicationRecord
     validates :image
   end
   
-  def add_tax_price
-　  (self.price * 1.1).round
-　end
+  def with_tax_price
+    (price * 1.1).floor
+  end
   
   def get_image(width, height)
     unless image.attached?
