@@ -1,4 +1,4 @@
-<%= form_with (model: item, local: true) do |f| %>
+<%= form_with model: item, url: new_admin_item_path, local: true do |f| %>
 <div class="item_form">
   <%= f.label :"商品画像", class: "form-label" %>
   <%= f.file_field :image, accept: "image/*" %>
@@ -13,7 +13,7 @@
 </div>
 <div class="item_form">
   <%= f.label :"ジャンル", class: "form-label" %>
-  <%= f.collection_select :genre_id, genres, :genre_id, :name, { prompt: "選択してください" } %>
+  <%= f.collection_select :item.genre_id, genres, :genre_id, :name, { prompt: "選択してください" } %>
 </div>
 <div class="item_form">
   <%= f.label :"税抜き価格", class: "form-label" %>
