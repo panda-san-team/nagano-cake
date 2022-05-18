@@ -1,4 +1,4 @@
-<%= form_with model: item do |f| %>
+<%= form_with (model: item, local: true) do |f| %>
 <div class="item_form">
   <%= f.label :"商品画像", class: "form-label" %>
   <%= f.file_field :image, accept: "image/*" %>
