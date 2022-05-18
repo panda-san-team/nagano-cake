@@ -11,11 +11,11 @@ class Item < ApplicationRecord
     validates :introduction
     validates :price, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 9_999_999 },
                   format: { with: /\A[0-9]+\z/ }
-    validates :is_active
+    validates :is_active, inclusion: {in: [true, false]}
     validates :image
   end
 
-
+  enum is_active: { "販売中": true, "販売停止中": false }
 
   def get_image(width, height)
     unless image.attached?
@@ -28,5 +28,7 @@ class Item < ApplicationRecord
   def with_tax_price
     (price * 1.1).floor
   end
+
+
 
 end
