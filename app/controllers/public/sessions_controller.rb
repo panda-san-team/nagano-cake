@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class Public::SessionsController < Devise::SessionsController
+  before_action :reject_customer, only: [:create]
+  
   # before_action :configure_sign_in_params, only: [:create]
 
   # GET /resource/sign_in
@@ -23,4 +25,17 @@ class Public::SessionsController < Devise::SessionsController
   # def configure_sign_in_params
   #   devise_parameter_sanitizer.permit(:sign_in, keys: [:attribute])
   # end
+  
+  protected
+  
+  def reject_customer
+    @customer = Customer.find_by(email: params[:customer][:email].downcase) 
+    if @customer
+      if @customer.valid_password?(params[:customer][:password]) && (@customer.active_for_authentication? == false)
+        flash[:alert] = "退会済みです。再度ご登録をしてご利用してください。"
+        redirect_to new_customer_registration_path
+      else
+      end
+    end
+  end
 end
