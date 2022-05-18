@@ -12,12 +12,13 @@ class Admin::ItemsController < ApplicationController
 
   def new
     @item = Item.new
+    @genres = Genre.all
   end
 
   def create
-    @item = Item.new
+    @item = Item.new(item_params)
     if @item.save
-      redirect_to :show
+      redirect_to admin_item_path(@item)
     else
       render :new
     end
@@ -41,6 +42,9 @@ class Admin::ItemsController < ApplicationController
       params.require(:item).permit(:image,:name,:introduction,:genre_id,:price,:is_active)
     end
 
+    def add_tax_price
+  　  (self.price * 1.1).round
+　  end
 
 
 end
