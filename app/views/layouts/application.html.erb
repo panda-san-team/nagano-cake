@@ -12,13 +12,8 @@
 
   <body>
     <header>
-      <% if customer_signed_in? %>
         <%= render 'layouts/customers_header' %>
-      <% elsif admin_signed_in? %>
         <%= render 'layouts/ad_header' %>
-      <% else %>
-        <%= render 'layouts/not_signed_in' %>
-      <% end %>
     </header>
     <%= yield %>
     <footer>
