@@ -13,9 +13,11 @@ class Item < ApplicationRecord
     validates :is_active
     validates :image
   end
-
-
-
+  
+  def add_tax_price
+　  (self.price * 1.1).round
+　end
+  
   def get_image(width, height)
     unless image.attached?
       file_path = Rails.root.join('app/assets/images/no_image.jpeg')
