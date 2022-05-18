@@ -1,11 +1,8 @@
 <h2>商品一覧</h2>
 <%= link_to new_admin_item_path do %>
-  <button class="button">
-    <i class="far fa-plus-circle"></i>
-  </button>
+  <button><i class="fas fa-plus-circle"></i></button>
 <% end %>
 
-<% @items.each do |item| %>
 <table class="table">
   <thead>
     <tr>
@@ -17,13 +14,18 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td><%= item.id %></td>
-      <td><%= item.name %></td>
-      <td><%= item.price %></td>
-      <td><%= genre_id %></td>
-      <td><%= f.select :is_active ,[['販売中',true],['販売停止中',false]] %></td>
-    </tr>
+    <% @items.each do |item| %>
+      <tr>
+        <td><%= item.id %></td>
+        <td><%= item.name %></td>
+        <td><%= item.price %></td>
+        <td><%= genre_id %></td>
+        <td>
+          <% if @item.is_active == true %>販売中
+          <% elsif @item.is_actitve == false %>販売停止中
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
   </tbody>
 </table>
-<% end %>
