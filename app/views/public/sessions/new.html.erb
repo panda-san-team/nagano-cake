@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col mx-auto mt-2 w-75">
-    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <%= form_with model: @customer, url: customer_session_path do |f| %>
       <h4 class="col-md-4 ml-3 mt-3">ログイン</h2>
       <h7 class="ml-5">会員の方はこちらからログイン</h7>
 
