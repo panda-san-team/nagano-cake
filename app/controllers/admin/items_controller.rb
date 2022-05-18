@@ -1,5 +1,6 @@
 class Admin::ItemsController < ApplicationController
   before_action :authenticate_admin!
+  
 
   def index
     @items = Item.all
@@ -41,10 +42,6 @@ class Admin::ItemsController < ApplicationController
     def item_params
       params.require(:item).permit(:image,:name,:introduction,:genre_id,:price,:is_active)
     end
-
-    def add_tax_price
-  　  (self.price * 1.1).round
-　  end
 
 
 end

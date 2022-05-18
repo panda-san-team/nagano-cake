@@ -9,7 +9,8 @@ class Item < ApplicationRecord
     validates :genre_id
     validates :name
     validates :introduction
-    validates :price
+    validates :price, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 9_999_999 },
+                  format: { with: /\A[0-9]+\z/ }
     validates :is_active
     validates :image
   end
@@ -23,4 +24,9 @@ class Item < ApplicationRecord
     end
     image.variant(resize_to_limit: [width, height]).processed
   end
+
+  def with_tax_price
+    (price * 1.1).floor
+  end
+
 end
