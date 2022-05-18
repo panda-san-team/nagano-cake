@@ -1,4 +1,12 @@
 header {
+  background-color: #FFF7E3;
+}
+
+.header-link {
+   border: double 5px #f8db6f;
+}
+
+.header-link:hover {
    background-color: #f8db6f;
 }
 
