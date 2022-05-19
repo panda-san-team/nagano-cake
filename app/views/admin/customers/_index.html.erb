@@ -9,7 +9,7 @@
   </thead>
   <tbody>
     <% @customers.each do |customer| %>
-    <tr>
+    <tr class="table-link" data-href="/admin/customers/<%= customer.id %>">
       <td><%= customer.id %></td>
       <td>
         <%= link_to admin_customer_path(customer), class: "link" do %>
@@ -26,4 +26,11 @@
     <% end %>
   </tbody>
 </table>
+<script>
+jQuery(document).on("turbolinks:load", function() {
+  $(".table-link").on('click', function() {
+      window.location = $(this).data("href");
+  });
+});
+</script>
 <%= paginate @customers, remote: true %>
