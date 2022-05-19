@@ -1,4 +1,5 @@
 <h2>商品新規登録</h2>
+
 <%= form_with model: @item, url: admin_items_path, method: :post, local: true do |f| %>
 <div class="item_form">
   <%= f.label :"商品画像", class: "form-label" %>
