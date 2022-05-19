@@ -1,5 +1,5 @@
 header {
-  background-color: #FFF7E3;
+    background-color: #FFF7E3;
 }
 
 .header-link {
@@ -24,7 +24,7 @@ footer {
   gap: 10px;
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .link {
