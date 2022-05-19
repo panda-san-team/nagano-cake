@@ -5,7 +5,6 @@ class Item < ApplicationRecord
   has_many :orders, through: :order_details
   belongs_to :genre
   
-  enum is_active: { "販売中": true, "販売停止中": false }
 
   with_options presence: true do
     validates :genre_id
