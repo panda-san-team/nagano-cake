@@ -5,8 +5,8 @@ class Customer < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :addresses, dependent: :destroy
   has_many :orders, dependent: :destroy
-
-  enum is_deleted: { "有効": false, "退会": true }
+  
+  enum is_deleted: {"有効": false,"退会": true }
 
   def full_name
     self.last_name + self.first_name
@@ -17,7 +17,7 @@ class Customer < ApplicationRecord
   end
   
   def active_for_authentication?
-    super && (is_deleted == false)
+    super && (is_deleted == "有効")
   end
 
 end
