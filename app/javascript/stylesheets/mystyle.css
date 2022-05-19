@@ -1,0 +1,36 @@
+header {
+  background-color: #FFF7E3;
+}
+
+.header-link {
+   border: double 5px #f8db6f;
+}
+
+.header-link:hover {
+   background-color: #f8db6f;
+}
+
+footer {
+   height: 200px;
+   padding: 20px 0px 10px;
+   background-color: #E3ECFF;
+ }
+
+.color {
+   color: #515151;
+}
+
+.pagination {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: black ;
+}
+a.link:hover {
+   color: #515151;
+}

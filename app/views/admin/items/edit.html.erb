@@ -1,2 +1,4 @@
 <h2>商品編集</h2>
-<%= render 'item_form', item: @item, genres: @genres %>
+<%= form_with model: @item, url: admin_item_path(@item), method: :patch, local: true do |f| %>
+  <%= render 'item_form', f: f %>
+<% end %>
