@@ -19,10 +19,7 @@
   <%= f.text_field :price %>円
 </div>
 <div class="item_form">
-  <%= f.radio_button :is_active, :true %>
-  <%= f.label :is_active, "販売中", {value: :true, style: "display: inline-block;"} %>
-  <%= f.radio_button :is_active, :false %>
-  <%= f.label :is_active, "販売停止中", {value: :false, style: "display: inline-block;"} %>
+ <%= f.select :is_active, Item.is_actives_i18n.invert, {prompt: true}, class:"form-controlcol-md-2"  %>
 </div>
 <div class="item_form">
   <%= f.submit new:"新規登録", edit:"変更を保存", class: "btn btn-success" %>
