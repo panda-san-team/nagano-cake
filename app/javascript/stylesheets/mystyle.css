@@ -34,3 +34,39 @@ footer {
 a.link:hover {
    color: #515151;
 }
+
+/*ここからカスタマーのtopページ*/
+.top_to_show {
+  position: relative;
+  padding: 10px;
+  background-color: #f0a15b;
+  border-radius: 15px;
+  margin-left: 70px;
+  font-size: 80%;
+  height: 40px;
+
+}
+
+.top_to_show:before {
+  content: '';
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  background-color: #f0a15b;
+  left: -25px;
+  bottom: 12px;
+  width: 15px;
+  height: 15px;
+}
+
+.top_to_show:after {
+ content: '';
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  background-color: #f0a15b;
+  left: -40px;
+  bottom: 10px;
+  width: 8px;
+  height: 8px;
+}
