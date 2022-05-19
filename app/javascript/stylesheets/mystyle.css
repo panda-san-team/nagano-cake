@@ -36,6 +36,24 @@ a.link:hover {
 }
 
 /*ここからカスタマーのtopページ*/
+
+ .main-visual {
+   background-image: url('/images/top_image.jpeg');
+   background-size: cover;
+   height: 500px;
+ }
+
+.main-visual-content {
+  font-weight: bold;
+  color: #4C4C4C;
+  text-shadow: 1px 2px 3px #808080;
+  height: 500px;
+  width: 400px;
+  background-color: rgba(227, 236, 255, 0.6); /* 背景色を半透明の黒にする */
+  text-align: center; /* 文字を中央揃えにする */
+  padding-top: 100px;
+}
+
 .top_to_show {
   margin-top: 20px;
   font-size: 12px;
