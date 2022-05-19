@@ -23,7 +23,10 @@
                 ￥<%= item.price %>
                 </div>
                <div class="col">
-                <%= link_to "もっと見る", item_path(item), class:"btn top_to_show" %>
+                <%= link_to item_path(item), class:"top_to_show btn" do %>
+                  <i class="fas fa-shopping-cart"></i>
+                  もっと見る
+                <% end %>
                </div>
              </div>
            </div>
@@ -32,7 +35,10 @@
       </div>
       <div class="row text-right mt-3 mb-3">
         <div class="col">
-          <%= link_to "全ての商品を見る >>", items_path %>
+          <%= link_to items_path, class:"btn top_to_index" do %>
+            すべて見る …
+            <i class="fas fa-plane"></i>
+          <% end %>
         </div>
       </div>
     </div>

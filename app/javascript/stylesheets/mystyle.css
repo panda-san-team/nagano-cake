@@ -37,36 +37,115 @@ a.link:hover {
 
 /*ここからカスタマーのtopページ*/
 .top_to_show {
-  position: relative;
-  padding: 10px;
-  background-color: #f0a15b;
-  border-radius: 15px;
-  margin-left: 70px;
-  font-size: 80%;
-  height: 40px;
-
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  background-color: #FFBF00;
+  border: solid;
+  border-color: #ffffcc;
+  border-radius: 50px;
+  border-width: 3px;
 }
 
-.top_to_show:before {
+.top_to_index {
+  position: relative;
+  margin-left: 70px;
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #4C4C4C;
+  width: 200px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1),
+              0 1px 6px rgba(0, 0, 0, 0.05),
+              0 8px 8px rgba(0, 0, 0, 0.1),
+              0 16px 16px rgba(0, 0, 0, 0.1),
+              8px 32px 32px rgba(0, 0, 0, 0.15),
+              8px 64px 64px rgba(0, 0, 0, 0.15);
+}
+
+.top_to_index:before {
   content: '';
   position: absolute;
   display: block;
   border-radius: 50%;
-  background-color: #f0a15b;
   left: -25px;
   bottom: 12px;
   width: 15px;
   height: 15px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1),
+              0 1px 6px rgba(0, 0, 0, 0.05),
+              0 8px 8px rgba(0, 0, 0, 0.1),
+              0 16px 16px rgba(0, 0, 0, 0.1),
+              8px 32px 32px rgba(0, 0, 0, 0.15),
+              8px 64px 64px rgba(0, 0, 0, 0.15);
 }
 
-.top_to_show:after {
+.top_to_index:after {
  content: '';
   position: absolute;
   display: block;
   border-radius: 50%;
-  background-color: #f0a15b;
   left: -40px;
   bottom: 10px;
   width: 8px;
   height: 8px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1),
+              0 1px 6px rgba(0, 0, 0, 0.05),
+              0 8px 8px rgba(0, 0, 0, 0.1),
+              0 16px 16px rgba(0, 0, 0, 0.1),
+              8px 32px 32px rgba(0, 0, 0, 0.15),
+              8px 64px 64px rgba(0, 0, 0, 0.15);
+}
+
+.top_to_index:hover {
+  position: relative;
+  margin-left: 70px;
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background-color: #4C4C4C;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1),
+              0 1px 6px rgba(0, 0, 0, 0.05),
+              0 8px 8px rgba(0, 0, 0, 0.1),
+              0 16px 16px rgba(0, 0, 0, 0.1),
+              8px 32px 32px rgba(0, 0, 0, 0.15),
+              8px 64px 64px rgba(0, 0, 0, 0.15);
+}
+
+.top_to_index:hover:before {
+  content: '';
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  left: -25px;
+  bottom: 12px;
+  width: 15px;
+  height: 15px;
+  background-color: #4C4C4C;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1),
+              0 1px 6px rgba(0, 0, 0, 0.05),
+              0 8px 8px rgba(0, 0, 0, 0.1),
+              0 16px 16px rgba(0, 0, 0, 0.1),
+              8px 32px 32px rgba(0, 0, 0, 0.15),
+              8px 64px 64px rgba(0, 0, 0, 0.15);
+}
+
+.top_to_index:hover:after {
+ content: '';
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  left: -40px;
+  bottom: 10px;
+  width: 8px;
+  height: 8px;
+  background-color: #4C4C4C;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1),
+              0 1px 6px rgba(0, 0, 0, 0.05),
+              0 8px 8px rgba(0, 0, 0, 0.1),
+              0 16px 16px rgba(0, 0, 0, 0.1),
+              8px 32px 32px rgba(0, 0, 0, 0.15),
+              8px 64px 64px rgba(0, 0, 0, 0.15);
 }
