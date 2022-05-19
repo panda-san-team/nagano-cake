@@ -15,6 +15,7 @@
         </thead>
         <tbody>
           <% @addresses.each do |address| %>
+          <%= link_to "新規登録", addresses_path, method: :post, class:"btn btn-success" %>
             <tr>
               <td><%= address.postal_code %></td>
               <td><%= address.address %></td>
