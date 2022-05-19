@@ -1,0 +1,4 @@
+<h2>商品編集</h2>
+<%= form_with model: @item, url: admin_item_path(@item), method: :patch, local: true do |f| %>
+  <%= render 'item_form', f: f %>
+<% end %>

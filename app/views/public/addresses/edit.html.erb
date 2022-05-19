@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h4>配送先編集</h4>
+      <%= render 'form', address: @address %>
+      <%= link_to "変更内容を保存", address_path, method: :patch, class:"btn btn-success" %>
+    </div>
+  </div>
+</div>

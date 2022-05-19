@@ -1,5 +1,6 @@
 <h2>商品新規登録</h2>
-
-<%= render 'item_form', item: @item, genres: @genres %>
+<%= form_with model: @item, url: admin_items_path, method: :post, local: true do |f| %>
+  <%= render 'item_form', f: f %>
+<% end %>
 
 
