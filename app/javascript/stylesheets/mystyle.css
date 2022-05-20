@@ -54,6 +54,21 @@ a.link:hover {
   padding-top: 100px;
 }
 
+.new-items {
+
+}
+
+.new-items-content {
+    width: 60px;
+  /*margin-right: 1px;*/
+  background-color: #f6f9ff;
+}
+
+.new-items-contet-image {
+  position: relative;
+  box-shadow: 0px 4px 4px rgba(0,0,0,.4);
+}
+
 .top_to_show {
   margin-top: 20px;
   font-size: 12px;

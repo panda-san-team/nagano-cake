@@ -16,28 +16,34 @@
 
       <h4>新着商品</h4>
       <div class="container">
-       <div class="row justify-content-center">
+       <div class="row new-items">
         <% @items.each do |item| %>
-           <div class="col-3">
-             <%= image_tag item.get_image(200,160), class:"rounded img-fluid" %>
-             <div class="row d-block">
-               <div class="col">
+           <div class=" col-3 new-items-content">
+             <div class="new-items-image">
+               <%= image_tag item.get_image(200,160), class:"rounded" %>
+             </div>
+             
+             <div class="row d-block new-items-text">
+               
+               <div class="col new-items-title">
                 <%= item.name %>
                </div>
-               <div class="col">
-                ￥<%= item.price %>
-                </div>
-               <div class="col">
+               <div class="col new-items-price">
+                ￥<strong><%= item.price %></strong>
+               </div>
+               <div class="col new-items-button">
                 <%= link_to item_path(item), class:"top_to_show btn" do %>
                   <i class="fas fa-shopping-cart"></i>
                   もっと見る
                 <% end %>
                </div>
+               
              </div>
            </div>
         <% end %>
       </div>
       </div>
+
       <div class="row text-right mt-3 mb-3">
         <div class="col">
           <%= link_to items_path, class:"btn top_to_index" do %>
