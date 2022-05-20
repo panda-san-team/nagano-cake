@@ -26,10 +26,37 @@ header {
 }
 
 .pagination {
-  gap: 10px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.pagination li a {
+    border: none;
+    color: #2f3640;
+}
+
+.page-item.active .page-link {
+    background-color: #FEC200;
+}
+
+.page-item:first-child .page-link {
+    border-radius: 0;
+}
+
+.page-item:last-child .page-link {
+    border-radius: 0;
+}
+
+.pagination li a:hover {
+    background-color: #FEC200;
+    color: #fff
+}
+
+.pagination li a:focus {
+    background-color: #FEC200;
+    color: #fff
 }
 
 .link {
@@ -37,5 +64,5 @@ header {
     color: black ;
 }
 a.link:hover {
-   color: #515151;
+    color: #515151;
 }
