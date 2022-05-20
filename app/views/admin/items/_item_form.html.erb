@@ -1,27 +1,27 @@
-<div class="form-group">
+<div class="item_form">
   <%= f.label :"商品画像", class: "form-label" %>
   <%= f.file_field :image, accept: "image/*" %>
 </div>
-<div class="form-group">
+<div class="item_form">
   <%= f.label :"商品名", class: "form-label" %>
   <%= f.text_field :name %>
 </div>
-<div class="form-group">
+<div class="item_form">
   <%= f.label :"商品説明", class: "form-label" %>
   <%= f.text_area :introduction %>
 </div>
-<div class="form-group">
+<div class="item_form">
   <%= f.label :"ジャンル", class: "form-label" %>
   <%= f.select :genre_id, options_from_collection_for_select(Genre.all, :id, :name, prompt: "選択してください") %>
 </div>
-<div class="form-group">
+<div class="item_form">
   <%= f.label :"税抜価格", class: "form-label" %>
   <%= f.text_field :price %>円
 </div>
-<div class="form-group">
- <%= f.select :is_active, [["販売中", true], ["販売停止中", false]], {prompt: true}, class:"form-controlcol-md-2"  %>
+<div class="item_form">
+  <%= f.select :is_active, [["販売中", true], ["販売停止中", false]], {prompt: true}, class: "form-controlcol-md-2" %>
 </div>
-<div class="form-group">
+<div class="item_form">
   <%= f.submit new:"新規登録", edit:"変更を保存", class: "btn btn-success" %>
 </div>
-</form>
+
