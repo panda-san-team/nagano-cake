@@ -1,6 +1,6 @@
  ja:
   enums:
-    order:
+    Order:
       status:
         waiting: "入金待ち"
         confirmed: "入金確認"

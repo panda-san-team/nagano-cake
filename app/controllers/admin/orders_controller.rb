@@ -6,4 +6,14 @@ class Admin::OrdersController < ApplicationController
       format.js
     end
   end
+  
+  def show
+    @order = Order.find(params[:id])
+  end
+  
+  def update
+    @order =Order.find(params[:id])
+    @order.save
+  end
+  
 end
