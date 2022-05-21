@@ -1,9 +1,3 @@
- ja:
-    enums:
-      item:
-        is_active:
-          true: "販売中"
-          false: "販売停止中"
 ja:
   views:
     pagination:
