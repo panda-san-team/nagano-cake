@@ -5,6 +5,7 @@ class Customer < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :addresses, dependent: :destroy
   has_many :orders, dependent: :destroy
+  has_many :cart_items, dependent: :destroy
 
   validates :last_name, presence: true
   validates :last_name_kana, presence: true
@@ -17,6 +18,7 @@ class Customer < ApplicationRecord
   validates :last_name_kana, :first_name_kana,
              format:  { with: /\A[\p{katakana}\p{blank}ー－]+\z/, message: "カタカナで入力して下さい。"}
 
+  
   enum is_deleted: {"有効": false,"退会": true }
 
   def full_name
