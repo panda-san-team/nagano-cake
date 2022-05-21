@@ -12,7 +12,7 @@ class Item < ApplicationRecord
     validates :introduction
     validates :price, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 9_999_999 },
                   format: { with: /\A[0-9]+\z/ }
-    validates :is_active, inclusion: {in: [true, false]}
+    validates :is_active,inclusion: [true, false]
     validates :image
   end
 
