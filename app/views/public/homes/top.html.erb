@@ -13,6 +13,7 @@
         </div >
       </div>
       <div class="new-items-title">新着商品</div>
+      <p class="new-items-body">その他、定番商品も数多くご用意しています</p>
       <div class="container">
         <div class="row text-center">
           <% @items.each do |item| %>
@@ -21,7 +22,7 @@
               <div class="new-items-content-body">
                 <div class="new-items-name"><%= item.name %></div>
                 <div class="new-items-price">
-                  ￥<strong><%= item.price %></strong>
+                  <span>￥</span><strong><%= item.price %></strong>
                 </div>
               </div>
               <%= link_to item_path(item), class:"top_to_show btn" do %>

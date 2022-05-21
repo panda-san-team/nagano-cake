@@ -98,10 +98,17 @@ a.link:hover {
 
 .new-items-title {
   text-align: center;
-  margin: 1rem;
+  margin-top: 3rem;
+  font-size: 30px;
   font-family: sans-serif;
   font-weight: bold;
   color: #4c4c4c;
+  font-family: "Noto Sans JP";
+}
+
+.new-items-body {
+  text-align: center;
+  margin-bottom: 2rem;
   font-family: "Noto Sans JP";
 }
 
@@ -115,15 +122,22 @@ a.link:hover {
 }
 
 .new-items-content-body {
+  margin-top: 3px;
   text-align: left;
 }
 
 .new-items-name {
+  font-size: 13px;
   font-family: "Noto Sans JP";
   color: #4C4C4C;
 }
 
+.new-items-price span {
+  font-size: 12px;
+}
+
 .new-items-price strong {
+  font-size: 18px;
   font-weight: bold;
   color: #666666;
 }
@@ -142,7 +156,9 @@ a.link:hover {
 
 .top_to_index {
   position: relative;
+  margin-top: 1rem;
   margin-left: 70px;
+  margin-bottom: 1rem;
   border-radius: 15px;
   font-size: 15px;
   font-weight: bold;
@@ -240,4 +256,20 @@ a.link:hover {
               0 16px 16px rgba(0, 0, 0, 0.1),
               8px 32px 32px rgba(0, 0, 0, 0.15),
               8px 64px 64px rgba(0, 0, 0, 0.15);
+}
+
+.search-form {
+   margin-left: 3px;
+}
+
+.form {
+  margin-left: 3px;
+  background-color: #e3ecff;
+}
+
+.search-btn {
+  padding:1 !important;
+  border:none !important;
+  background-color:white !important;
+  box-shadow:none !important;
 }

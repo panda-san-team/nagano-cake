@@ -29,6 +29,14 @@
           </li>
         </div>
       </ul>
-
+      <div class="search-form">
+      <%= form_with url: items_path, method: :get, local: true do |f| %>
+        <%= f.text_field :content , placeholder:"         商品名で検索", class:"form rounded-pill text-light "%>
+        <%= f.button :type => "submit", class:"search-btn" do %>
+          <i class="fas fa-search"></i>
+        <% end %>
+      <% end %>
+      </div>
+        
   </div>
 </nav>
