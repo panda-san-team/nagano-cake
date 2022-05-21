@@ -1,5 +1,5 @@
 header {
-  background-color: #FFF7E3;
+    background-color: #FFF7E3;
 }
 
 .header-link {
@@ -10,9 +10,14 @@ header {
    background-color: #f8db6f;
 }
 
-footer {
+.ad-footer {
+   height: 80px;
+   background-color: #E3ECFF;
+ }
+
+.customer-footer {
    height: 200px;
-   padding: 20px 0px 10px;
+   padding: 20px 0px 20px;
    background-color: #E3ECFF;
  }
 
@@ -21,10 +26,37 @@ footer {
 }
 
 .pagination {
-  gap: 10px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.pagination li a {
+    border: none;
+    color: #2f3640;
+}
+
+.page-item.active .page-link {
+    background-color: #FEC200;
+}
+
+.page-item:first-child .page-link {
+    border-radius: 0;
+}
+
+.page-item:last-child .page-link {
+    border-radius: 0;
+}
+
+.pagination li a:hover {
+    background-color: #FEC200;
+    color: #fff
+}
+
+.pagination li a:focus {
+    background-color: #FEC200;
+    color: #fff
 }
 
 .link {
@@ -32,5 +64,5 @@ footer {
     color: black ;
 }
 a.link:hover {
-   color: #515151;
+    color: #515151;
 }
