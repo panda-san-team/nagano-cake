@@ -2,12 +2,12 @@
   <div class="row">
     <div class="col-md-1">
     </div>
-    
+
     <div class="col-md-10 mt-3">
       <div class="main-visual">
-        
-         <div><%= flash[:notice] %></div> 
-         
+
+         <div><%= flash[:notice] %></div>
+
         <div class="main-visual-content">
           <h1>ようこそ、</h1>
           <h1>ながのCAKEへ！</h1>
@@ -17,30 +17,31 @@
         </div >
       </div>
 
-      <h4>新着商品</h4>
+      <div class="row text-center new-items-title">新着商品</div>
+
       <div class="container">
        <div class="row new-items">
         <% @items.each do |item| %>
-           <div class=" col-3 new-items-content">
-             <div class="new-items-image">
+           <div class=" col-3 card">
+             <div class="card-image">
                <%= image_tag item.get_image(200,160), class:"rounded" %>
              </div>
-             
-             <div class="row d-block new-items-text">
-               
-               <div class="col new-items-title">
+
+             <div class="row d-block card-content">
+
+               <div class="col card-title">
                 <%= item.name %>
                </div>
-               <div class="col new-items-price">
+               <div class="col card-price">
                 ￥<strong><%= item.price %></strong>
                </div>
-               <div class="col new-items-button">
+               <div class="col card-link">
                 <%= link_to item_path(item), class:"top_to_show btn" do %>
                   <i class="fas fa-shopping-cart"></i>
                   もっと見る
                 <% end %>
                </div>
-               
+
              </div>
            </div>
         <% end %>
