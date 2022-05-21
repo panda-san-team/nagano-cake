@@ -1,6 +1,10 @@
 class Admin::CustomersController < ApplicationController
   def index
     @customers = Customer.page(params[:page]).per(10)
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   def show

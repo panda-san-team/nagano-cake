@@ -1,4 +1,67 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-1">
+    </div>
 
-<h1>Public::Homes#top</h1>
-<p>Find me in app/views/public/homes/top.html.erb</p>
+    <div class="col-md-10 mt-3">
+      <div class="main-visual">
 
+         <div><%= flash[:notice] %></div>
+
+        <div class="main-visual-content">
+          <h1>ようこそ、</h1>
+          <h1>ながのCAKEへ！</h1>
+          <p>このサイトは、ケーキ販売のECサイトになります。</p>
+          <p>会員でない方も商品の閲覧はできますが、</p>
+          <p>購入には会員登録が必要になります。</p>
+        </div >
+      </div>
+
+      <div class="row text-center new-items-title">
+        <h4>新着商品</h4>
+      </div>
+
+      <div class="container">
+       <div class="row new-items">
+        <% @items.each do |item| %>
+           <div class=" col-3 card">
+             <div class="card-image">
+               <%= image_tag item.get_image(200,160), class:"rounded" %>
+             </div>
+
+             <div class="row d-block card-content">
+
+               <div class="col card-title">
+                <%= item.name %>
+               </div>
+               <div class="col card-price">
+                ￥<strong><%= item.price %></strong>
+               </div>
+               <div class="col card-link">
+                <%= link_to item_path(item), class:"top_to_show btn" do %>
+                  <i class="fas fa-shopping-cart"></i>
+                  もっと見る
+                <% end %>
+               </div>
+
+             </div>
+           </div>
+        <% end %>
+      </div>
+      </div>
+
+      <div class="row text-right mt-3 mb-3">
+        <div class="col">
+          <%= link_to items_path, class:"btn top_to_index" do %>
+            すべて見る …
+            <i class="fas fa-plane"></i>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-1">
+    </div>
+
+  </div>
+</div>
