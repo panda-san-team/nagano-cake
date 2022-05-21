@@ -14,12 +14,13 @@ class Public::CustomersController < ApplicationController
   end
 
   def quit
-    @customer = Customer.find_by(params[:id])
+    # @customer = Customer.find_by(params[:id])
+    @customer = current_customer
   end
 
   def out
-    @customer = Customer.find_by(params[:id])
-    @customer.update(is_deleted: true)
+    @customer = current_customer
+    @customer.update(is_deleted: true) #ここでis_deletedカラムの値をtrueに更新
     reset_session
     flash[:notice] = "またのご利用をお待ちしております"
     redirect_to root_path
@@ -32,3 +33,5 @@ class Public::CustomersController < ApplicationController
   end
 
 end
+
+# https://qiita.com/amiblog/items/625287e1448285163d1e参考
