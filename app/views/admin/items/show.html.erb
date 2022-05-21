@@ -31,10 +31,10 @@
           <tr>
             <th>販売ステータス</th>
             <td>
-              <% if @item.is_active == true %>
-                <div class="text-success font-weight-bold">販売中</div>
-              <% elsif @item.is_active == false %>
-                <div class="text-muted font-weight-bold">販売停止中</div>
+              <% if @item.is_active == "販売中" %>
+                <div class="text-success font-weight-bold"><%= @item.is_active %></div>
+              <% else %>
+                <div class="text-muted font-weight-bold"><%= @item.is_active %></div>
               <% end %>
             </td>
           </tr>
