@@ -1,8 +1,8 @@
 class Order < ApplicationRecord
   belongs_to :customer
   has_many :order_details, dependent: :destroy
-  
-  
+
+
   with_options presence: true do
     validates :customer_id
     validates :postal_code
@@ -13,8 +13,16 @@ class Order < ApplicationRecord
     validates :payment_method
     validates :status
   end
-  
+
   enum payment_method: { credit_card: 0, transfer: 1 }
   enum status: { 入金待ち: 0, 入金確認: 1, 製作中: 2, 発送準備中: 3, 発送済み: 4 }
+
+  def sum_amount
+    sum = 0
+    order_details.each do |order_detail|
+      sum += order_detail.amount
+    end
+    sum
+  end
 
 end
