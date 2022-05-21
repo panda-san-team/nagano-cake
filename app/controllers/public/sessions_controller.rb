@@ -2,22 +2,21 @@
 
 class Public::SessionsController < Devise::SessionsController
 
-  before_action :reject_customer, only: [:create]
+  before_action :reject_deleted_customer, only: [:create]
 
   protected
 
-  def reject_customer
-    @customer = Customer.find_by(email: params[:customer][:email].downcase)
+  def reject_deleted_customer
+    @customer = Customer.find_by(email: params[:customer][:email])
     if @customer
-      if (@customer.valid_password?(params[:customer][:password]) && (@customer.active_for_authentication? == false))
-        flash[:alert] = "このアカウントは退会済みです。"
-        redirect_to new_customer_session_path
+      if (@customer.valid_password?(params[:customer][:password]) && (@customer.is_deleted == "退会"))
+        flash[:alert] = "退会済のため、再登録が必要です。"
+        redirect_to new_customer_registration_path
       end
-    else
     end
   end
-  
-  
+
+
   # before_action :configure_sign_in_params, only: [:create]
 
 
