@@ -20,7 +20,7 @@ class Public::CustomersController < ApplicationController
 
   def out
     @customer = current_customer
-    @customer.update(is_deleted: true) #ここでis_deletedカラムの値をtrueに更新
+    @customer.update(is_deleted: "退会") #ここでis_deletedカラムの値を"退会"に更新
     reset_session
     flash[:notice] = "またのご利用をお待ちしております"
     redirect_to root_path
