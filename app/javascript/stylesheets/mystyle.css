@@ -268,7 +268,7 @@ a.link:hover {
 }
 
 .search-btn {
-  padding:1 !important;
+  padding:1px !important;
   border:none !important;
   background-color:white !important;
   box-shadow:none !important;
