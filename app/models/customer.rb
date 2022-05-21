@@ -12,8 +12,8 @@ class Customer < ApplicationRecord
   validates :first_name_kana, presence: true
   validates :address, presence: true
   validates :telephone_number, presence: true
-  validates :postal_code, length: {is: 7}, numericary: {only_integer: true}
-  validates :telephone_number, numericary: {only_integer: true}
+  validates :postal_code, length: {is: 7}, numericality: {only_integer: true}
+  validates :telephone_number, numericality: {only_integer: true}
   validates :last_name_kana, :first_name_kana,
              format:  { with: /\A[\p{katakana}\p{blank}ー－]+\z/, message: "カタカナで入力して下さい。"}
 
