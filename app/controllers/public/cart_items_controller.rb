@@ -1,5 +1,5 @@
 class Public::CartItemsController < ApplicationController
-  
+
   before_action :authenticate_customer!
 
   def create
@@ -10,7 +10,7 @@ class Public::CartItemsController < ApplicationController
       @cart_item.amount += @new_cart_item.amount
       @new_cart_item.destroy
     end
-    
+
     if @cart_item.save
       flash[:notice] = "カートに商品が追加されました"
       redirect_to cart_items_path

@@ -39,11 +39,16 @@
           <td class="text-black-50 font-weight-bold"><%= @customer.is_deleted %></td>
         <% end %>
       </tr>
+      <tr>
+        <th></th>
+        <td>
+          <div class="w-75 d-flex justify-content-between">
+          <%=link_to "編集する", edit_admin_customer_path(@customer), class: "btn btn-success" %>
+          <%=link_to "注文履歴一覧を見る", admin_orders_path, class: "btn btn-primary" %>
+          </div>
+        </td>
+      </tr>
     </table>
-    <div class="col-8 mx-auto d-flex justify-content-around">
-      <%=link_to "編集する", edit_admin_customer_path(@customer), class: "btn btn-success" %>
-      <%=link_to "注文履歴一覧を見る", admin_orders_path, class: "btn btn-primary" %>
-    </div>
     </div>
   </div>
 </div>

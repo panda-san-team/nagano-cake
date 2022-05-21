@@ -1,0 +1,8 @@
+ ja:
+  enums:
+    OrderDetail:
+      making_status:
+        tbc: "製作不可"
+        pending: "製作待ち"
+        making: "製作中"
+        completed: "製作完了"
