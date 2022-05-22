@@ -8,10 +8,14 @@ Rails.application.routes.draw do
   }
 
   scope module: :public do
-    resource :customers, only: [:show,:edit,:update]
+    root to: 'homes#top'
+    get '/about' => 'homes#about', as: 'about'
     get '/customers/quit' => 'customers#quit'
     patch '/customers/out' => 'customers#out'
+    post '/orders/confirm' => 'orders#confirm'
+    get '/orders/thanks' => 'orders#thanks'
 
+    resource :customers, only: [:show,:edit,:update]
     resources :addresses, only: [:index,:create,:edit,:update,:destroy]
     resources :cart_items, only: [:index,:update,:destroy,:create] do
       collection do
@@ -19,12 +23,7 @@ Rails.application.routes.draw do
       end
     end
     resources :orders, only: [:new,:create,:index,:show]
-    post '/orders/confirm' => 'orders#confirm'
-    get '/orders/thanks' => 'orders#thanks'
-
     resources :items, only: [:index,:show]
-    root to: 'homes#top'
-    get '/about' => 'homes#about', as: 'about'
 
   end
 
