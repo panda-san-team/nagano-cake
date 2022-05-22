@@ -309,3 +309,67 @@ a {
 .my-page-info {
   background-color: #E9D1DD;
 }
+
+.icon {
+  font-size: 8em;
+  color: #E9D1DD;
+}
+
+.title_h3 {
+  color: #E9D1DD;
+  font-size: 40px;
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+}
+
+.my-page-visual {
+  background-image: url('/images/cup_cake3.png');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: left 100% top;
+}
+
+.info-title {
+  font-size: 19px;
+  font-family: "Noto Sans JP";
+  color: #515151
+}
+
+.info_to_edit {
+  background-color: #d5a6bd;
+  border-color: #d5a6bd;
+  font-family: "Noto Sans JP";
+  color: #515151
+}
+
+.table th {
+  text-align: right;
+  font-size: 15px;
+  font-family: "Noto Sans JP";
+  color: #515151
+}
+
+.table td {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Noto Sans JP";
+  color: #515151
+}
+
+.info_to_order_index {
+  margin-left: 3px;
+  background-color: #d5a6bd;
+  border-color: #d5a6bd;
+  font-family: "Noto Sans JP";
+  color: #515151
+}
+
+.info_to_address_index {
+  background-color: #d5a6bd;
+  border-color: #d5a6bd;
+  font-family: "Noto Sans JP";
+  color: #515151
+}
+
+
+
