@@ -3,9 +3,10 @@ Rails.application.routes.draw do
     sessions: "admin/sessions"
   }
   devise_for :customers,skip: [:passwords], path_names: { registration: 'register' }, controllers: {
-    registrations: "public/registrations",
+    registrations: 'public/registrations',
     sessions: 'public/sessions'
   }
+ 
 
   scope module: :public do
     resource :customers, only: [:show,:edit,:update]

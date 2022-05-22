@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   before_action :configure_permitted_parameters, if: :devise_controller?
 
   def after_sign_up_path_for(resource)
-    if customers_signed_in?
+    if customer_signed_in?
       customers_path(resource)
     else
       admin_orders_path
