@@ -304,3 +304,8 @@ a {
   background-color:white !important;
   box-shadow:none !important;
 }
+
+/*ここからマイページ*/
+.my-page-info {
+  background-color: #E9D1DD;
+}
