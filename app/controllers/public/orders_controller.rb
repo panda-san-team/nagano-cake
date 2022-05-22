@@ -1,10 +1,10 @@
 class Public::OrdersController < ApplicationController
   before_action :authenticate_customer!
-  
+
   def new
     @order = Order.new
   end
-  
+
   def confirm
     @order = Order.new(order_params)
     if params[:order][:select_address] == "0"
@@ -58,12 +58,12 @@ class Public::OrdersController < ApplicationController
       render :confirm
     end
   end
-  
+
   def thanks
   end
-  
+
   def index
-    @orders = current_customer.orders.order(created_at: :desc).page(params[:page]).per(10)
+    @orders = current_customer.orders.order(created_at: :desc).page(params[:page]).per(8)
   end
 
   def show
@@ -79,7 +79,7 @@ class Public::OrdersController < ApplicationController
         :name,
         :shipping_cost,
         :total_payment,
-        :payment_method,
+        :payment_method
         )
     end
 end

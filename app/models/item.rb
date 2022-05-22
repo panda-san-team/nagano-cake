@@ -6,13 +6,15 @@ class Item < ApplicationRecord
   has_many :orders, through: :order_details
   belongs_to :genre
 
+  enum is_active: {"販売中": true, "販売停止中": false }
+
   with_options presence: true do
     validates :genre_id
     validates :name
     validates :introduction
     validates :price, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 9_999_999 },
                   format: { with: /\A[0-9]+\z/ }
-    validates :is_active,inclusion: [true, false]
+    validates :is_active,inclusion: ["販売中", "販売停止中"]
     validates :image
   end
 
