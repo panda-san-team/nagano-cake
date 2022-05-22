@@ -5,7 +5,6 @@ class Admin::OrdersController < ApplicationController
       format.html
       format.js
     end
-
   end
 
   def show
@@ -14,7 +13,20 @@ class Admin::OrdersController < ApplicationController
 
   def update
     @order =Order.find(params[:id])
-    @order.save
+    @order_detail = @order.order_details
+    @order.update(order_params)
+    if @order.status == "confirmed"
+      @order.order_details.update_all(making_status: "pending")
+      redirect_to request.referer
+    else
+      redirect_to request.referer
+    end
+  end
+
+  private
+
+  def order_params
+    params.require(:order).permit(:status)
   end
 
 end
