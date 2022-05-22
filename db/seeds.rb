@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Item.create(
+Item.create!(
   genre_id: 1,
   name: 'チョコブラウニー',
   introduction: 'クーベルチョコレートをたっぷり使ったちょっと贅沢したい時にピッタリのブラウニーです。',
@@ -15,7 +15,7 @@ Item.create(
   image: File.open("./app/assets/images/ブラウニー.jpeg")
   )
 
-Item.create(
+Item.create!(
   genre_id: 1,
   name: 'レモンケーキ',
   introduction: 'アールグレイの紅茶にとってもお似合いのレモンケーキをご用意しました。',
@@ -24,7 +24,7 @@ Item.create(
   image: File.open("./app/assets/images/レモンケーキ.jpeg")
   )
 
-Item.create(
+Item.create!(
   genre_id: 1,
   name: 'いちごのホールケーキ',
   introduction: 'あまおういちごをたっぷり使ったホールケーキです。',
@@ -33,7 +33,7 @@ Item.create(
   image: File.open("./app/assets/images/いちごのホールケーキ.jpeg")
   )
 
-Item.create(
+Item.create!(
   genre_id: 1,
   name: 'チョコレートカップケーキ',
   introduction: '優雅なおやつの時間を過ごせます。',
@@ -42,7 +42,7 @@ Item.create(
   image: File.open("./app/assets/images/カップケーキ.jpeg")
   )
 
-Item.create(
+Item.create!(
   genre_id: 1,
   name: 'いちごのホワイトロールケーキ',
   introduction: '甘さ控えめのホワイトチョコがクセになる口当たりが軽いロールケーキです。',

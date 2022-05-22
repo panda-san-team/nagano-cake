@@ -3,9 +3,10 @@ Rails.application.routes.draw do
     sessions: "admin/sessions"
   }
   devise_for :customers,skip: [:passwords], path_names: { registration: 'register' }, controllers: {
-    registrations: "public/registrations",
+    registrations: 'public/registrations',
     sessions: 'public/sessions'
   }
+ 
 
   scope module: :public do
     root to: 'homes#top'
@@ -24,6 +25,7 @@ Rails.application.routes.draw do
     end
     resources :orders, only: [:new,:create,:index,:show]
     resources :items, only: [:index,:show]
+
   end
 
   namespace :admin do

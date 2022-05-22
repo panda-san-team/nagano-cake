@@ -18,7 +18,7 @@ class Customer < ApplicationRecord
   validates :last_name_kana, :first_name_kana,
              format:  { with: /\A[\p{katakana}\p{blank}ー－]+\z/, message: "カタカナで入力して下さい。"}
 
-  
+
   enum is_deleted: {"有効": false,"退会": true }
 
   def full_name
