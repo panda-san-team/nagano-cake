@@ -24,7 +24,6 @@ Rails.application.routes.draw do
     end
     resources :orders, only: [:new,:create,:index,:show]
     resources :items, only: [:index,:show]
-
   end
 
   namespace :admin do
