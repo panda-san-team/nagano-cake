@@ -76,6 +76,15 @@ a.link:hover {
   color: #4C4C4C;
 }
 
+.nav-link:hover {
+  border-bottom: 3px;
+  border-bottom-color:#ffd700 !important;
+}
+
+.list {
+  font-size: 12px;
+}
+
 /*ここからカスタマーのtopページ*/
 
  .main-visual {
@@ -161,7 +170,7 @@ a {
   color: #666666;
 }
 
-span {
+.new-items-price span {
   color: #666666;
 }
 

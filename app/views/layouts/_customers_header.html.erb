@@ -16,16 +16,28 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <li class="mx-1">
-            <%= link_to "マイページ", customers_path, class:"nav-link bg-light text-secondary rounded-lg" %>
+            <%= link_to customers_path, class:"nav-link bg-light text-secondary rounded-lg" do %>
+              <i class="fas fa-user"></i>
+              <span class="list">マイページ</span>
+            <% end %>
           </li>
           <li class="mx-1">
-            <%= link_to "商品一覧", items_path, class:"nav-link bg-light text-secondary rounded-lg" %>
+            <%= link_to items_path, class:"nav-link bg-light text-secondary rounded-lg" do %>
+              <i class="fas fa-store"></i>
+              <span class="list">商品一覧</span>
+            <% end %>
           </li>
           <li class="mx-1">
-            <%= link_to "カート", cart_items_path, class:"nav-link bg-light text-secondary rounded-lg" %>
+            <%= link_to cart_items_path, class:"nav-link bg-light text-secondary rounded-lg" do %>
+              <i class="fas fa-shopping-cart"></i>
+              <span class="list">カート</span>
+            <% end %>
           </li>
           <li class="mx-1">
-            <%= link_to "ログアウト", destroy_customer_session_path, method: :delete, class:"nav-link bg-light text-secondary rounded-lg" %>
+            <%= link_to destroy_customer_session_path, method: :delete, class:"nav-link bg-light text-secondary rounded-lg" do %>
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="list">ログアウト</span>
+            <% end %>
           </li>
         </div>
       </ul>
