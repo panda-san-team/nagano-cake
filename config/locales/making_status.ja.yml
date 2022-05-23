@@ -1,6 +1,6 @@
  ja:
   enums:
-    OrderDetail:
+    order_detail:
       making_status:
         tbc: "製作不可"
         pending: "製作待ち"

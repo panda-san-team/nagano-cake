@@ -64,9 +64,11 @@ header {
     text-decoration: none;
     color: black ;
 }
+
 a.link:hover {
    color: #515151;
 }
+
 
 /*カスタマーのヘッダー*/
 
