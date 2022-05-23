@@ -482,3 +482,30 @@ a {
   font-size: 18px;
   font-weight: bold !important;
 }
+
+/*ここからカート内一覧*/
+.cart_icon {
+  font-size: 8em;
+  color: #e6e6fa;
+}
+
+.cart_items {
+  background-color: #e6e6fa;
+}
+
+.cart_title {
+  font-size: 40px;
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+  color: #e6e6fa;
+}
+
+.cart_items_table {
+  background-color: white;
+}
+
+.cart_items_table th {
+  text-align: center;
+  font-family: "Noto Sans JP";
+  color: #515151;
+}
