@@ -1,11 +1,12 @@
-<div class= "container">
-  <div class= "row">
-    <div class = "col-4">
-      <%= image_tag @item.get_image(200,150) %>
+<div class="container px-5 px-sm-0">
+  <div class="row justify-content-center my-4">
+    <div class="col-md-6 text-center">
+      <%= image_tag @item.get_image(400,400) %>
     </div>
-    <div class= "col-6">
-      <h3><%= @item.name %></h3>
-      <p><%= @item.introduction %></p>
+    <div class= "col-md-6 item-show">
+      <h3 class="item-name text-center mt-5"><%= @item.name %></h3>
+      <br>
+      <p class="item-introduction text-center"><%= @item.introduction %></p>
       <h4>
         ¥ <%= @item.price.to_s(:delimited) %>
         <span>(税込)</span>
