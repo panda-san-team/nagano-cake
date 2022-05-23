@@ -99,7 +99,7 @@ a.link:hover {
   text-shadow: 1px 2px 3px #808080;
   height: 500px;
   width: 400px;
-  background-color: rgba(227, 236, 255, 0.6); /* 背景色を半透明の黒にする */
+  background-color: rgba(227, 236, 255, 0.6);
   text-align: center;
   padding-top: 100px;
   font-family: "Noto Sans JP";
@@ -121,9 +121,11 @@ a {
 
 .new-items-content {
    transition: 0.3s;
+   background-color: #f6f9ff;
 }
 
 .new-items-content:hover {
+  transition: 0.3s;
   top: -8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -143,10 +145,6 @@ a {
   transition: 0.3s;
   top: -3px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
-}
-
-.new-items-content {
-  background-color: #f6f9ff;
 }
 
 .new-items-content-body {
@@ -435,3 +433,52 @@ a {
   color: white;
 }
 
+/*ここから商品一覧ページ*/
+
+.index_items {
+  font-family: "Noto Sans JP";
+  color: #515151;
+}
+
+.items_index {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.items_index_item {
+  width: 24%;
+  margin: 4px;
+  background-color: #f6f9ff;
+}
+
+.items_index_item:hover {
+  top: -8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.items_index_item_image {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.items_index_item_img {
+  width: 100%;
+  height: 240px;
+}
+
+.items_index_item_body {
+  padding: 20px;
+  text-align: left;
+}
+
+ .items_index_item_name {
+  font-family: "Noto Sans JP";
+  color: #515151;
+  font-weight: bold;
+}
+
+.items-index_item_price {
+  color: #515151;
+  font-size: 18px;
+  font-weight: bold !important;
+}
