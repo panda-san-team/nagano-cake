@@ -102,7 +102,7 @@ a.link:hover {
   height: 500px;
   width: 400px;
   background-color: rgba(227, 236, 255, 0.6); /* 背景色を半透明の黒にする */
-  text-align: center; 
+  text-align: center;
   padding-top: 100px;
   font-family: "Noto Sans JP";
 }
@@ -313,24 +313,6 @@ a {
 }
 
 
-
-
-/*管理者・商品一覧ページ*/
-.btn-stitch {
-  display: inline-block;
-  padding: 0.5em 1em;
-  background: #668ad8;
-  color: #FFF;
-  border-radius: 4px;
-  box-shadow: 0px 0px 0px 5px #668ad8;
-  border: dotted 2px #FFF;
-}
-
-.btn-stitch:hover {
-  border: dotted 1px #FFF;
-  color: #FFF;
-}
-
 .my_page_icon {
   font-size: 8em;
   color: #E9D1DD;
@@ -426,3 +408,45 @@ a {
 }
 
 
+/*管理者・商品一覧ページ*/
+.btn-stitch {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background: #668ad8;
+  color: #FFF;
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 5px #668ad8;
+  border: dotted 2px #FFF;
+}
+
+.btn-stitch:hover {
+  border: dotted 1px #FFF;
+  color: #FFF;
+}
+
+.about-main-visual {
+  position: relative;
+  background-image: url('/images/image1.jpg');
+  background-size: cover;
+  width: 800px;
+  height: 470px;
+}
+
+.about-main-visual-title {
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  background-color: #FFF;
+  opacity: 0.5;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 30px;
+  text-shadow:2px 2px 3px #cccccc;
+}
+
+.about-main-visual-content {
+  color: #330000;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #ffffcc;
+  opacity: 0.7;
+
+}
