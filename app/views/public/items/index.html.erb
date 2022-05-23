@@ -1,12 +1,12 @@
 <div class="container">
   <div class="row">
-    <div class="col-10">
+    <div class="col-md-10">
       <h1>商品一覧</h1>
       <span>(全<%= @items.count %>件)</span>
     </div>
     <% @items.each do |item| %>
-    <div class="col-10">
-      <div class="card">
+    <div class="col-md-6 col-lg-4">
+      <div class="card bg-transparent border-0 text-center">
         <%= link_to item_path(item.id) do %>
           <%= image_tag item.get_image(200,150) %>
         <% end %>
