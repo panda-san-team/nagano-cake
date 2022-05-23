@@ -100,7 +100,7 @@ a.link:hover {
   height: 500px;
   width: 400px;
   background-color: rgba(227, 236, 255, 0.6); /* 背景色を半透明の黒にする */
-  text-align: center; /* 文字を中央揃えにする */
+  text-align: center; 
   padding-top: 100px;
   font-family: "Noto Sans JP";
 }
@@ -309,3 +309,99 @@ a {
 .my-page-info {
   background-color: #E9D1DD;
 }
+
+.my_page_icon {
+  font-size: 8em;
+  color: #E9D1DD;
+}
+
+.title_h3 {
+  color: #E9D1DD;
+  font-size: 40px;
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+}
+
+.my-page-visual {
+  background-image: url('/images/cup_cake3.png');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: left 100% top;
+}
+
+.info-title {
+  font-size: 19px;
+  font-family: "Noto Sans JP";
+  color: #515151
+}
+
+.info_to_edit {
+  background-color: #d5a6bd;
+  border-color: #d5a6bd;
+  font-family: "Noto Sans JP";
+  color: #515151
+}
+
+.table th {
+  text-align: right;
+  font-size: 15px;
+  font-family: "Noto Sans JP";
+  color: #515151
+}
+
+.table td {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Noto Sans JP";
+  color: #515151
+}
+
+.info_to_order_index {
+  margin-left: 3px;
+  background-color: #d5a6bd;
+  border-color: #d5a6bd;
+  font-family: "Noto Sans JP";
+  color: #515151
+}
+
+.info_to_address_index {
+  background-color: #d5a6bd;
+  border-color: #d5a6bd;
+  font-family: "Noto Sans JP";
+  color: #515151
+}
+
+/*ここから会員情報編集ページ*/
+
+.info_edit_page_icon {
+  font-size: 8em;
+  color: #ffefcf;
+}
+
+.info_edit_title {
+  color: #ffefcf;
+  font-size: 40px;
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+}
+
+.info_edit_form {
+  font-family: "Noto Sans JP";
+  background-color: #ffefcf;
+  color: #515151;
+}
+
+.input_area {
+  border: 2px solid #ccbfa5;
+  border-radius: 5px;
+}
+
+.info_edit_save {
+  background-color: #7f7767;
+}
+
+.customer_out {
+  background-color: #7f7767;
+}
+
+
