@@ -1,43 +1,11 @@
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-8">
-      <h3 class="p-3 mb-2 text-secondary">商品一覧</h3>
-          <%= link_to new_admin_item_path, class: "btn btn-outline-info rounded-circle" do %>
-            <i class="fas fa-plus fa-2x"></i>
-          <% end %>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>商品ID</th>
-                <th>商品名</th>
-                <th>税抜き価格</th>
-                <th>ジャンル</th>
-                <th>ステータス</th>
-              </tr>
-            </thead>
-            <tbody>
-              <% @items.each do |item| %>
-                <tr>
-                  <td><%= item.id %></td>
-                  <td>
-                    <%= link_to admin_item_path(item) do %>
-                    <%= item.name %>
-                    <% end %>
-                  </td>
-                  <td><%= item.price %></td>
-                  <td><%= item.genre.name %></td>
-                  <td>
-                    <% if item.is_active == "販売中" %>
-                      <div class="text-success font-weight-bold"><%= item.is_active %></div>
-                    <% else %>
-                      <div class="text-muted font-weight-bold"><%= item.is_active %></div>
-                    <% end %>
-                  </td>
-                </tr>
-              <% end %>
-            </tbody>
-          </table>
-        <%= paginate @items %>
+<div class="container px-5 px-sm-0">
+  <div class="row my-4">
+    <h3 class="col-5 text-center pb-2">商品一覧</h3>
+    <div class="col-7 text-center pb-2">
+      <%= link_to "商品追加", new_admin_item_path, class:"btn-stitch" %>
+    </div>
+    <div id="pagainate" class="col-8 mx-auto">
+      <%= render 'index', items: @items %>
     </div>
   </div>
 </div>

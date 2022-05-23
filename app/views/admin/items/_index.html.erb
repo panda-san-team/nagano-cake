@@ -1,0 +1,33 @@
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th>商品ID</th>
+      <th>商品名</th>
+      <th>税抜き価格</th>
+      <th>ジャンル</th>
+      <th>ステータス</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% items.each do |item| %>
+      <tr>
+        <td><%= item.id %></td>
+        <td>
+          <%= link_to admin_item_path(item) do %>
+          <%= item.name %>
+          <% end %>
+        </td>
+        <td><%= item.price %></td>
+        <td><%= item.genre.name %></td>
+        <td>
+          <% if item.is_active == "販売中" %>
+            <div class="text-success font-weight-bold"><%= item.is_active %></div>
+          <% else %>
+            <div class="text-muted font-weight-bold"><%= item.is_active %></div>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= paginate items, remote: true %>
