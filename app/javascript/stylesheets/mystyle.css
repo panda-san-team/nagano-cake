@@ -312,6 +312,25 @@ a {
   background-color: #E9D1DD;
 }
 
+
+
+
+/*管理者・商品一覧ページ*/
+.btn-stitch {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background: #668ad8;
+  color: #FFF;
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 5px #668ad8;
+  border: dotted 2px #FFF;
+}
+
+.btn-stitch:hover {
+  border: dotted 1px #FFF;
+  color: #FFF;
+}
+
 .my_page_icon {
   font-size: 8em;
   color: #E9D1DD;

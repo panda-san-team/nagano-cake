@@ -1,22 +1,23 @@
-<div class="container">
-<div class="row justify-content-center">
-  <div class="col-md-8">
-    <h3 class="p-3 mb-2 text-secondary">ジャンル編集</h3>
-      <div class="row">
-        <%= form_with model: @genre, url: admin_genre_path(@genre), local:true do |f| %>
-          <table class="table">
-            <tr>
-              <th>ジャンル名</th>
-              <td>
-                <%= f.text_field :name %>
-              </td>
-              <td>
-                <%= f.submit "新規登録", class: "btn btn-success" %>
-              </td>
-            </tr>
-          </table>
-        <% end %>
-      </div>
+<div class="container px-5 px-sm-0">
+  <div class="row my-4">
+    <h3 class="col-5 text-center pb-2">ジャンル編集</h3>
   </div>
-</div>
+  <div class="row">
+    <div class="col-8 mx-auto">
+      <%= render 'layouts/error', obj: @genre %>
+      <%= form_with model: @genre, url: admin_genre_path(@genre), local:true do |f| %>
+        <table class="table">
+          <tr>
+            <th>ジャンル名</th>
+            <td>
+              <%= f.text_field :name %>
+            </td>
+            <td>
+              <%= f.submit "新規登録", class: "btn btn-success" %>
+            </td>
+          </tr>
+        </table>
+      <% end %>
+    </div>
+  </div>
 </div>
