@@ -424,6 +424,7 @@ a {
   color: #FFF;
 }
 
+/*アバウトページ*/
 .about-main-visual {
   position: relative;
   background-image: url('/images/image1.jpg');
@@ -451,7 +452,76 @@ a {
 
 }
 
+/*商品詳細ページ*/
 .item-show {
-  background-color: #eeeaec;
+  background-color: #eaedf7;
   font-family: 'Noto Sans JP', sans-serif;
+  position: relative;
+}
+
+.item-name {
+  padding: 1rem 2rem;
+  border-top: 4px double #FFF;
+  border-bottom: 4px double #FFF;
+  color: #1c305c;
+  font-weight: 700;
+}
+
+.item-price {
+  position: absolute;
+  bottom: 65px;
+  right: 30px;
+}
+
+.item-cart-form {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  display: flex;
+  width: 320px;
+}
+
+.cp_ipselect {
+	overflow: hidden;
+	width: 30%;
+	text-align: center;
+}
+.cp_ipselect select {
+	width: 90%;
+	cursor: pointer;
+	text-indent: 0.01px;
+	text-overflow: ellipsis;
+	border: none;
+	outline: none;
+	background: transparent;
+	background-image: none;
+	box-shadow: none;
+	appearance: none;
+}
+.cp_ipselect select::-ms-expand {
+    display: none;
+}
+.cp_ipselect.cp_sl04 {
+  height: 70%;
+  position: absolute;
+  bottom: 5px;
+  border: 2px solid #1c305c;
+  border-radius: 50px;
+  background: #ffffff;
+  right: 150px;
+}
+
+.cp_ipselect.cp_sl04 select {
+	padding: 8px 38px 8px 8px;
+	color: #1c305c;
+}
+
+.cart-button {
+  border-radius: 25px;
+  font-weight: bold;
+  padding: 1em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #1c305c;
+  transition: .4s;
 }
