@@ -69,6 +69,9 @@ a.link:hover {
    color: #515151;
 }
 
+.field_with_errors {
+  display: contents;
+}
 
 /*カスタマーのヘッダー*/
 
@@ -102,7 +105,7 @@ a.link:hover {
   height: 500px;
   width: 400px;
   background-color: rgba(227, 236, 255, 0.6); /* 背景色を半透明の黒にする */
-  text-align: center; 
+  text-align: center;
   padding-top: 100px;
   font-family: "Noto Sans JP";
 }

@@ -3,6 +3,7 @@
     <h3 class="col-8 mb-4"><%= @customer.full_name %>さんの会員情報編集</h3>
     <div class='col-10'>
       <%= form_with model: @customer, url: admin_customer_path do |f| %>
+      <%= render "layouts/error", obj: @customer %>
         <table class="table-sm table-borderless">
           <tr class="field">
             <th>会員ID</th>
