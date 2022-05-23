@@ -100,7 +100,7 @@ a.link:hover {
   height: 500px;
   width: 400px;
   background-color: rgba(227, 236, 255, 0.6); /* 背景色を半透明の黒にする */
-  text-align: center; /* 文字を中央揃えにする */
+  text-align: center; 
   padding-top: 100px;
   font-family: "Noto Sans JP";
 }
@@ -403,3 +403,5 @@ a {
 .customer_out {
   background-color: #7f7767;
 }
+
+
