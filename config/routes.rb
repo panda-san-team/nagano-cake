@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     registrations: 'public/registrations',
     sessions: 'public/sessions'
   }
- 
+
 
   scope module: :public do
     root to: 'homes#top'
@@ -29,6 +29,8 @@ Rails.application.routes.draw do
   end
 
   namespace :admin do
+    get '/orders/customers_index/:customer_id' => 'orders#customer_index', as: "customer_orders"
+
     resources :customers, only: [:index,:show,:update,:edit]
     resources :orders, only: [:index,:show,:update]
     resources :items, only: [:index,:create,:new,:show,:edit,:update]

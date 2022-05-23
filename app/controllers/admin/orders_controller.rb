@@ -1,6 +1,15 @@
 class Admin::OrdersController < ApplicationController
   def index
-    @orders = Order.page(params[:page]).per(10)
+    @orders = Order.page(params[:page]).per(10).order(created_at: :DESC)
+    respond_to do |format|
+      format.html
+      format.js
+    end
+  end
+
+  def customer_index
+    @customer = Customer.find(params[:customer_id])
+    @customer_orders = @customer.orders.page(params[:page]).per(10).order(created_at: :DESC)
     respond_to do |format|
       format.html
       format.js

@@ -17,7 +17,7 @@
       </tr>
       <tr>
         <th>郵便番号</th>
-        <td><%= @customer.postal_code %></td>
+        <td><%= @customer.postal_code.to_s.insert(3, "-") %></td>
       </tr>
       <tr>
         <th>住所</th>
@@ -44,7 +44,9 @@
         <td>
           <div class="w-75 d-flex justify-content-between">
           <%=link_to "編集する", edit_admin_customer_path(@customer), class: "btn btn-success" %>
-          <%=link_to "注文履歴一覧を見る", admin_orders_path, class: "btn btn-primary" %>
+          <%=link_to admin_customer_orders_path(@customer), class: "btn btn-primary" do %>
+            <%= @customer.full_name %>さんの注文履歴一覧を見る
+          <% end %>
           </div>
         </td>
       </tr>

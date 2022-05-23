@@ -2,20 +2,18 @@
   <thead class="thead-light">
     <tr>
       <th>購入日時</th>
-      <th>購入者</th>
       <th>注文個数</th>
       <th>注文ステータス</th>
     </tr>
   </thead>
   <tbody>
-    <% orders.each do |order| %>
-    <tr class="table-link" data-href="/admin/orders/<%= order.id %>">
-      <td>
+    <% customer_orders.each do |order| %>
+    <tr>
+      <td class="table-link" data-href="/admin/orders/<%= order.id %>">
         <%= link_to admin_order_path(order), class: "link" do %>
         <%= order.created_at.strftime("%Y/%m/%d %H:%M:%S") %>
         <% end %>
       </td>
-      <td><%= order.name %></td>
       <td><%= order.sum_amount %></td>
       <td><%= order.status_i18n %></td>
     </tr>
@@ -29,4 +27,4 @@ jQuery(document).on("turbolinks:load", function() {
   });
 });
 </script>
-<%= paginate orders, remote: true %>
+<%= paginate customer_orders, remote: true %>
