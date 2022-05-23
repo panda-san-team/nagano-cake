@@ -3,8 +3,13 @@ class Admin::OrderDetailsController < ApplicationController
     @order_detail =OrderDetail.find(params[:id])
     @order = Order.find_by(id: @order_detail.order_id)
     @order_details = @order.order_details
-
     @order_detail.update(order_detail_params)
+
+    if params[:order_detail][:making_status] == "making"
+      @order.update(status: 2)
+      redirect_to request.referer
+    end
+
     count = 0
     @order_details.each do |order_detail|
       if order_detail.making_status == "completed"
@@ -13,11 +18,8 @@ class Admin::OrderDetailsController < ApplicationController
     end
 
     if @order_details.count == count
-      @order.update_attribute(:status, 3)
-    end
-
-    if params[:order_detail][:making_status] == "making"
-      @order.update_attribute(:status, 2)
+      @order.update(status: 3)
+      redirect_to request.referer
     end
 
   end

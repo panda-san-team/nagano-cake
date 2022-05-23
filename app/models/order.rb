@@ -29,4 +29,8 @@ class Order < ApplicationRecord
     self.total_payment - self.shipping_cost
   end
 
+  def delivery_address
+    "〒" + self.postal_code.to_s.insert(3, "-") + " " + self.address
+  end
+
 end
