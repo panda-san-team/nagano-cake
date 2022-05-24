@@ -884,3 +884,43 @@ vertical-align: middle;
   font-size: 2em;
   color: #FFF;
 }
+
+/* ジャンル一覧・追加*/
+
+.genre_index_icon {
+  font-size: 3em;
+  color: #3bccbe;
+}
+
+
+.genre_index_title {
+  font-size: 30px;
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+  color: #3bccbe;
+}
+
+.genre_index_item {
+  background-color: #e5fff2;
+  font-family: "Noto Sans JP";
+}
+
+.genre_index {
+  background-color: #FFF;
+  font-family: "Noto Sans JP";
+}
+
+.genre_index_btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #40d0e0;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #2c998e;
+  border-radius: 3px;
+}
+.genre_index_btn:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
