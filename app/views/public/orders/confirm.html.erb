@@ -1,6 +1,8 @@
 <div class="container">
-  <div class="row">
-    <h3>注文情報確認</h3>
+  <div class="row text-center">
+    <div class="col mt-5">
+      <h3>注文情報確認</h3>
+    </div>
   </div>
 
   <div class="row">
@@ -8,6 +10,7 @@
     <table class="table table-bordered">
       <thead class="thead-light">
         <tr>
+          <th></th>
           <th>商品名</th>
           <th>単価（税込）</th>
           <th>数量</th>
@@ -19,8 +22,8 @@
           <tr>
             <td>
               <%= image_tag cart_item.item.get_image(100, 100) %>
-              <%= cart_item.item.name %>
             </td>
+            <td><%= cart_item.item.name %></td>
             <td>
               <%= cart_item.item.with_tax_price.to_s(:delimited) %>
             </td>
@@ -58,7 +61,7 @@
   <div class="row">
     <h5 class="mr-3"><b>支払方法</b></h5><span><%= @order.payment_method_i18n %></span>
   </div>
-  
+
   <div class="row">
     <h5 class="mr-3"><b>お届け先</b></h5><span><%= "〒" + @order.postal_code + @order.address %><br><%= @order.name %></span>
   </div>
