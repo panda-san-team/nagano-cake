@@ -1,10 +1,10 @@
-<div class= "container">
+<div class= "container my-5">
     
   <h2>注文履歴詳細</h2>
-  <div class= "row">
+  <div class= "row mt-4">
     <div class= "col-md-6">
       <table class='table table-hover table-inverse'>
-      <h4>注文情報</h4>
+      <h4 class="pb-4">注文情報</h4>
       <tr>
         <td>注文日</td>
         <td><%= @order.created_at.strftime('%Y/%m/%d') %></td>
@@ -23,11 +23,11 @@
       </tr>
       <tr>
         <td>ステータス</td>
-        <td><%= @order.status %></td>
+        <td><%= @order.status_i18n %></td>
       </tr>
      </table>
     </div>
-    <div class= "col-md-5">
+    <div class= "col-md-5 offset-1">
       <table class='table table-hover table-inverse'>
       <h4>請求情報</h4>
       　<tr>
@@ -46,7 +46,7 @@
     </div>
   </div>
   
-  <div class="row">
+  <div class="row mt-2">
     <div class="col-md-8">
       <table class='table table-hover table-inverse'>
       <h4>注文内容</h4>
