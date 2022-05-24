@@ -793,3 +793,41 @@ vertical-align: middle;
 .order_index_btn:link, .order_index_btn:visited {
   color: #FFF;
 }
+
+.order_show_title {
+  font-size: 30px;
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+  color: #59b9c6;
+}
+
+.order_show_box {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #1f3134;
+}
+
+.order_show_box1 {
+  background-color: #e0ffef;
+  border: solid 2px #59b9c6;
+}
+
+.order_show_box2 {
+  background-color: #e0ffe0;
+  border: solid 2px #59b9c6;
+}
+
+.order_show_box3 {
+  background-color: #efffe0;
+  border: solid 2px #59b9c6;
+}
+
+.order_show_icon {
+  font-size: 2em;
+  color: #59b9c6;
+}
+
+.order_show_box_title {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #00a497;
+  font-weight: bold;
+}
