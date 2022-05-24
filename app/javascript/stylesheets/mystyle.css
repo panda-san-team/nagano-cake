@@ -500,6 +500,14 @@ a {
   color: #e6e6fa;
 }
 
+.cart_items_delete {
+  font-size: 14px;
+  font-weight: bold;
+  color: #515151;
+  background-color: #fac8a8;
+  border-color: #fac8c8;
+}
+
 .cart_items_table {
   background-color: white;
 }
@@ -508,4 +516,81 @@ a {
   text-align: center;
   font-family: "Noto Sans JP";
   color: #515151;
+}
+
+.cart_items_img {
+  padding: 10px 0;
+}
+
+.cart_items_amount_change {
+  font-size: 12px;
+  font-weight: bold;
+  background-color: white;
+  border: solid 1px #7a7a99;
+  color: #515151;
+}
+
+.cart_items_amount_change:hover {
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #a3a3cc;
+  border: solid 1px #a3a3cc;
+  color: #515151;
+}
+
+.cart_items_item_delete {
+  font-size: 12px;
+  font-weight: bold;
+  background-color: white;
+  border: solid 1px #7a7a99;
+  color: #515151;
+}
+
+.cart_items_item_delete:hover {
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #a3a3cc;
+  border: solid 1px #a3a3cc;
+  color: #515151;
+}
+
+.cart_to_top {
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #c8c8fa;
+  border-color: #c8c8fa;
+  color: white;
+}
+
+.cart_to_top:hover {
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #bcbccc;
+  border-color: #bcbccc;
+  color: white;
+}
+
+.cart_to_order {
+  font-size: 14px;
+  font-weight: bold;
+  color: #515151;
+  background-color: #fafac8;
+  border-color: #fafac8;
+}
+
+.cart_to_order:hover {
+  font-size: 14px;
+  font-weight: bold;
+  color: #515151;
+  background-color: #cccca3;
+  border-color: #cccca3;
+}
+
+.cart_items_total_price {
+  text-align: center;
+  background-color: white;
+}
+
+.cart_items_total_price span {
+  text-align: center !important;
 }
