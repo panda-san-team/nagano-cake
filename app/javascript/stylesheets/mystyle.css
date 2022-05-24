@@ -859,5 +859,17 @@ a {
   color :white;
 }
 
+/*アドミン側ログインページ*/
+.ad_log_in {
+  background-color: #E75685;
+  color: white;
+  font-weight: bold;
+}
+
+.ad_log_in:hover {
+  background-color: #B657E5;
+  color: white;
+  font-weight: bold;
+}
 
 
