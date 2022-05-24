@@ -722,6 +722,8 @@ a {
   transition: .4s;
 }
 
+/*注文情報入力ページ*/
+
 .order-form-box {
   background-color: #f7f6fb;
   font-family: 'Noto Sans JP', sans-serif;
@@ -747,6 +749,8 @@ a {
   outline: none
 
 }
+
+/*注文履歴一覧ページ*/
 
 .order_icon {
   font-size: 8em;
@@ -794,6 +798,7 @@ vertical-align: middle;
   color: #FFF;
 }
 
+/*注文履歴詳細ページ*/
 .order_show_title {
   font-size: 30px;
   font-family: "Noto Sans JP";
@@ -830,4 +835,52 @@ vertical-align: middle;
   font-family: 'Noto Sans JP', sans-serif;
   color: #00a497;
   font-weight: bold;
+}
+
+/*配送先編集ページ*/
+
+.address_edit_icon {
+  font-size: 3em;
+  color: #68a9cf;
+}
+
+.address_edit_title {
+  font-size: 30px;
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+  color: #68a9cf;
+}
+
+.address_edit_form {
+  background-color: #bbdbf3;
+}
+
+.address_form {
+  position: relative;
+  font-family: "Noto Sans JP";
+}
+
+.address_save_btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #409ecc;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #204f66;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 5px;
+  right: 3px;
+}
+
+.address_save_btn:active, .address_save_btn:link, .address_save_btn:visited {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+  color: #FFF;
+}
+
+.address_save_icon {
+  font-size: 2em;
+  color: #FFF;
 }
