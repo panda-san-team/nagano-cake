@@ -394,12 +394,12 @@ a {
   border-radius: 5px;
 }
 
-.info_edit_save {
+.info_edit_save, .customer_out {
   background-color: #7f7767;
 }
 
-.customer_out {
-  background-color: #7f7767;
+.info_edit_save:hover, .customer_out:hover {
+  background-color: #ccbfa5;
 }
 
 /*ここから退会確認画面*/
