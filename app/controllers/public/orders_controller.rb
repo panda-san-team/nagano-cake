@@ -1,5 +1,5 @@
 class Public::OrdersController < ApplicationController
-  before_action :authenticate_customer!
+ before_action :authenticate_customer!
 
   def new
     @order = Order.new
@@ -83,3 +83,12 @@ class Public::OrdersController < ApplicationController
         )
     end
 end
+
+
+
+
+
+
+
+
+

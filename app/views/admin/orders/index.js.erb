@@ -1,1 +1,1 @@
-$('#paginate').html("<%= escape_javascript(render 'index') %>");
+$('#paginate').html("<%= escape_javascript(render 'index', orders: @orders ) %>");

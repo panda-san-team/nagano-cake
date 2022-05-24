@@ -15,7 +15,9 @@ class Public::CartItemsController < ApplicationController
       flash[:notice] = "カートに商品が追加されました"
       redirect_to cart_items_path
     else
-      render ('item/show')
+      @item = Item.find(params[:cart_item][:item_id])
+      @cart_item = CartItem.new
+      render 'public/items/show'
     end
   end
 
