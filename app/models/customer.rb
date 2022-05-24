@@ -16,7 +16,7 @@ class Customer < ApplicationRecord
   validates :postal_code, length: {is: 7}, numericality: {only_integer: true}
   validates :telephone_number, numericality: {only_integer: true}
   validates :last_name_kana, :first_name_kana,
-             format:  { with: /\A[\p{katakana}\p{blank}ー－]+\z/, message: "カタカナで入力して下さい。"}
+             format:  { with: /\A[\p{katakana}\p{blank}ー－]+\z/, message: "をカタカナで入力して下さい。"}
 
 
   enum is_deleted: {"有効": false,"退会": true }

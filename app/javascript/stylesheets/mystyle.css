@@ -68,6 +68,11 @@ a.link:hover {
    color: #515151;
 }
 
+
+.field_with_errors {
+  display: contents;
+}
+
 /*カスタマーのヘッダー*/
 
 .header-name {
@@ -307,6 +312,7 @@ a {
 .my-page-info {
   background-color: #E9D1DD;
 }
+
 
 .my_page_icon {
   font-size: 8em;
@@ -595,4 +601,149 @@ a {
   text-align: center !important;
 }
 
+
 /*ここから注文情報確認画面*/
+
+/*管理者・商品一覧ページ*/
+.btn-stitch {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background: #668ad8;
+  color: #FFF;
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 5px #668ad8;
+  border: dotted 2px #FFF;
+}
+
+.btn-stitch:hover {
+  border: dotted 1px #FFF;
+  color: #FFF;
+}
+
+/*アバウトページ*/
+.about-main-visual {
+  position: relative;
+  background-image: url('/images/image1.jpg');
+  background-size: cover;
+  width: 800px;
+  height: 470px;
+}
+
+.about-main-visual-title {
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  background-color: #FFF;
+  opacity: 0.5;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 30px;
+  text-shadow:2px 2px 3px #cccccc;
+}
+
+.about-main-visual-content {
+  color: #330000;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #ffffcc;
+  opacity: 0.7;
+
+}
+
+/*商品詳細ページ*/
+.item-show {
+  background-color: #eaedf7;
+  font-family: 'Noto Sans JP', sans-serif;
+  position: relative;
+}
+
+.item-name {
+  padding: 1rem 2rem;
+  border-top: 4px double #FFF;
+  border-bottom: 4px double #FFF;
+  color: #1c305c;
+  font-weight: 700;
+}
+
+.item-price {
+  position: absolute;
+  bottom: 65px;
+  right: 30px;
+}
+
+.item-cart-form {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  display: flex;
+  width: 320px;
+}
+
+.cp_ipselect {
+	overflow: hidden;
+	width: 30%;
+	text-align: center;
+}
+.cp_ipselect select {
+	width: 90%;
+	cursor: pointer;
+	text-indent: 0.01px;
+	text-overflow: ellipsis;
+	border: none;
+	outline: none;
+	background: transparent;
+	background-image: none;
+	box-shadow: none;
+	appearance: none;
+}
+.cp_ipselect select::-ms-expand {
+    display: none;
+}
+.cp_ipselect.cp_sl04 {
+  height: 70%;
+  position: absolute;
+  bottom: 5px;
+  border: 2px solid #1c305c;
+  border-radius: 50px;
+  background: #ffffff;
+  right: 150px;
+}
+
+.cp_ipselect.cp_sl04 select {
+	padding: 8px 38px 8px 8px;
+	color: #1c305c;
+}
+
+.cart-button {
+  border-radius: 25px;
+  font-weight: bold;
+  padding: 1em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #1c305c;
+  transition: .4s;
+}
+
+.order-form-box {
+  background-color: #f7f6fb;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #6b395f;
+  position: relative;
+}
+
+.order-title {
+  color: #6b395f;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+  border-bottom: dashed 2px #331b2d;
+}
+
+.order-submit-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  background-color: #6b395f;
+  color: #FFF;
+  border-radius: 20px;
+  height: 40px;
+  outline: none
+
+}
