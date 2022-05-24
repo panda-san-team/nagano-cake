@@ -1,5 +1,6 @@
 <% if @cart_items.present? %>
   <div class= "container">
+     <div><%= flash[:cart_notice] %></div>
     <div class= "row justify-content-start">
       <div class="col mt-5">
         <i class="fas fa-shopping-cart cart_icon"> </i>

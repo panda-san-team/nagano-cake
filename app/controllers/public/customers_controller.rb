@@ -10,8 +10,7 @@ class Public::CustomersController < ApplicationController
   def update
     @customer = current_customer
     if @customer.update(customer_params)
-      flash[:success] = "登録情報を変更しました"  
-      redirect_to customers_path
+      redirect_to customers_path, flash: {info_edit_success: "登録情報を変更しました"}
     else
       render :edit and return
     end
@@ -25,8 +24,7 @@ class Public::CustomersController < ApplicationController
     @customer = current_customer
     @customer.update(is_deleted: "退会") #ここでis_deletedカラムの値を"退会"に更新
     reset_session
-    flash[:notice] = "ありがとうございました。またのご利用をお待ちしております"
-    redirect_to root_path
+    redirect_to root_path, flash: {out_notice: "ありがとうございました。またのご利用をお待ちしております"}
   end
 
   private
