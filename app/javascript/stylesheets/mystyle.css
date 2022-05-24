@@ -346,14 +346,14 @@ a {
   color: #515151
 }
 
-.table th {
+.my_info_table th {
   text-align: right;
   font-size: 15px;
   font-family: "Noto Sans JP";
   color: #515151
 }
 
-.table td {
+.my_info_table td {
   text-align: center;
   font-size: 18px;
   font-family: "Noto Sans JP";
