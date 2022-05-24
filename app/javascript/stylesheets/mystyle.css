@@ -604,6 +604,33 @@ a {
 
 /*ここから注文情報確認画面*/
 
+.confirm_icon {
+  font-size: 8rem;
+  color: #008080;
+}
+
+.order_btn {
+  background-color: #008080;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Noto Sans JP'
+}
+
+.order_btn:hover {
+  background-color: #478fb1;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Noto Sans JP'
+}
+
+.order_total_price {
+  font-size: 30px;
+}
+
 /*管理者・商品一覧ページ*/
 .btn-stitch {
   display: inline-block;
