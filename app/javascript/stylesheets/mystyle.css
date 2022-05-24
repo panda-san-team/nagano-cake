@@ -747,3 +747,49 @@ a {
   outline: none
 
 }
+
+.order_icon {
+  font-size: 8em;
+  color: #ffe5e5;
+}
+
+.order_index_title {
+  font-size: 40px;
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+  color: #ffe5e5;
+}
+
+.order_index {
+  background-color: #ffe5e5;
+}
+
+.order_index_table {
+  background-color: #FFF;
+}
+
+.order_index_table th, .order_index_table td {
+text-align: center;
+vertical-align: middle;
+}
+
+.order_index_btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #ff8e8e;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #cc7272;
+  border-radius: 3px;
+}
+.order_index_btn:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+  color: #FFF;
+}
+
+.order_index_btn:link, .order_index_btn:visited {
+  color: #FFF;
+}
