@@ -55,6 +55,10 @@ class Public::OrdersController < ApplicationController
       @cart_items.destroy_all
       redirect_to orders_thanks_path
     else
+      @cart_items = current_customer.cart_items
+      @shipping_cost = 800
+      @total_price = @cart_items.inject(0) { |sum, item| sum + item.subtotal }
+      @total_payment = @shipping_cost + @total_price
       render :confirm
     end
   end
@@ -68,6 +72,7 @@ class Public::OrdersController < ApplicationController
 
   def show
     @order = Order.find(params[:id])
+
   end
 
   private
