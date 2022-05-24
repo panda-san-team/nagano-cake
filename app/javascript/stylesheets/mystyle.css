@@ -525,3 +525,29 @@ a {
   background: #1c305c;
   transition: .4s;
 }
+
+.order-form-box {
+  background-color: #f7f6fb;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #6b395f;
+  position: relative;
+}
+
+.order-title {
+  color: #6b395f;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+  border-bottom: dashed 2px #331b2d;
+}
+
+.order-submit-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  background-color: #6b395f;
+  color: #FFF;
+  border-radius: 20px;
+  height: 40px;
+  outline: none
+
+}
