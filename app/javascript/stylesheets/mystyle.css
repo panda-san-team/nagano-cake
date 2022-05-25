@@ -982,18 +982,36 @@ a {
 }
 
 /*会員側会員一覧画面*/
-.customer_index_top {
+.customer_index_top,
+.ad_item_edit_top,
+.ad_items_new_top,
+.ad_customer_show_top,
+.ad_items_index_top,
+.ad_items_show_top,
+.ad_customer_orders_top{
   padding: 5px;
   background-color: #7a8fbb;
   border-radius: 30px;
 }
 
-.customer_index_icon {
+.customer_index_icon,
+.ad_item_edit_icon,
+.ad_items_new_icon,
+.ad_customer_show_icon,
+.ad_items_index_icon,
+.ad_items_show_icon,
+.ad_customer_orders_icon{
   font-size: 20px;
   color: white;
 }
 
-.customer_index_title {
+.customer_index_title,
+.ad_item_edit_title,
+.ad_items_new_title,
+.ad_customer_show_title,
+.ad_items_index_title,
+.ad_items_show_title,
+.ad_customer_orders_title {
   font-family: 'Noto Sans JP';
   font-size: 16px;
   color: white;
@@ -1170,6 +1188,27 @@ vertical-align: middle;
   color: #FFF;
 }
 
+
+ .genre_btn:hover {
+   color: #FFF;
+ }
+
+ /*管理者側会員詳細ページ*/
+ .ad_customer_show_to_items_index {
+   padding: 0.5em 1em;
+   background-color: #66d9b4;
+   color: white;
+   border-radius: 4px;
+   box-shadow: 0px 0px 0px 5px #66d9b4;
+   border: dotted 2px #FFF;
+ }
+
+.ad_customer_show_to_items_index:hover {
+  border: dotted 1px #FFF;
+  color: #FFF;
+}
+/**/
+
 /*管理者側　注文履歴詳細*/
 
 
@@ -1232,3 +1271,4 @@ vertical-align: middle;
   color: #FFF;
   border-radius: 4px;
 }
+
