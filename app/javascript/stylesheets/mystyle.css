@@ -853,6 +853,8 @@ a {
   transition: .4s;
 }
 
+/*注文情報入力ページ*/
+
 .order-form-box {
   background-color: #f7f6fb;
   font-family: 'Noto Sans JP', sans-serif;
@@ -1012,3 +1014,184 @@ a {
   font-size: 16px;
   color: white;
 }
+/*注文履歴一覧ページ*/
+
+.order_icon {
+  font-size: 8em;
+  color: #ffe5e5;
+}
+
+.order_index_title {
+  font-size: 40px;
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+  color: #ffe5e5;
+}
+
+.order_index {
+  background-color: #ffe5e5;
+}
+
+.order_index_table {
+  background-color: #FFF;
+}
+
+.order_index_table th, .order_index_table td {
+text-align: center;
+vertical-align: middle;
+}
+
+.order_index_btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #ff8e8e;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #cc7272;
+  border-radius: 3px;
+}
+.order_index_btn:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+  color: #FFF;
+}
+
+.order_index_btn:link, .order_index_btn:visited {
+  color: #FFF;
+}
+
+/*注文履歴詳細ページ*/
+.order_show_title {
+  font-size: 30px;
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+  color: #59b9c6;
+}
+
+.order_show_box {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #1f3134;
+}
+
+.order_show_box1 {
+  background-color: #e0ffef;
+  border: solid 2px #59b9c6;
+}
+
+.order_show_box2 {
+  background-color: #e0ffe0;
+  border: solid 2px #59b9c6;
+}
+
+.order_show_box3 {
+  background-color: #efffe0;
+  border: solid 2px #59b9c6;
+}
+
+.order_show_icon {
+  font-size: 2em;
+  color: #59b9c6;
+}
+
+.order_show_box_title {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #00a497;
+  font-weight: bold;
+}
+
+/*配送先編集ページ*/
+
+.address_edit_icon {
+  font-size: 3em;
+  color: #68a9cf;
+}
+
+.address_edit_title {
+  font-size: 30px;
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+  color: #68a9cf;
+}
+
+.address_edit_form {
+  background-color: #bbdbf3;
+}
+
+.address_form {
+  position: relative;
+  font-family: "Noto Sans JP";
+}
+
+.address_save_btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #409ecc;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #204f66;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 5px;
+  right: 3px;
+}
+
+.address_save_btn:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+.address_save_btn:hover {
+  color: #FFF;
+}
+
+.address_save_icon {
+  font-size: 2em;
+  color: #FFF;
+}
+
+/* ジャンル一覧・追加*//*ジャンル編集*/
+
+.genre_icon {
+  font-size: 3em;
+  color: #ffd6d6;
+}
+
+
+.genre_title {
+  font-size: 30px;
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+  color: #ffd6d6;
+}
+
+.genre_item {
+  background-color: #ffe6e6;
+  font-family: "Noto Sans JP";
+}
+
+.genre_form {
+  background-color: #FFF;
+  font-family: "Noto Sans JP";
+}
+
+.genre_btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #ffd6d6;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #ccabab;
+  border-radius: 3px;
+}
+.genre_btn:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+ .genre_btn:hover {
+   color: #FFF;
+ }

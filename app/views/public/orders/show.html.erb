@@ -1,35 +1,39 @@
-<div class= "container my-5">
-    
-  <h2>注文履歴詳細</h2>
-  <div class= "row mt-4">
-    <div class= "col-md-6">
-      <table class='table table-hover table-inverse'>
-      <h4 class="pb-4">注文情報</h4>
-      <tr>
-        <td>注文日</td>
-        <td><%= @order.created_at.strftime('%Y/%m/%d') %></td>
-      </tr>
-      <tr>
-        <td>配送先</td>
-        <td>
-          <%= "〒" + @order.postal_code %><br>
-          <%= @order.address %><br>
-          <%= @order.name %>
-        </td>
-      </tr>
-      <tr>
-        <td>支払方法</td>
-        <td><%= @order.payment_method_i18n %></td>
-      </tr>
-      <tr>
-        <td>ステータス</td>
-        <td><%= @order.status_i18n %></td>
-      </tr>
-     </table>
+<div class= "container">
+  <div class="row my-1 justify-content-around">
+    <h3 class="col-md-10 text-center">
+      <i class="fas fa-paperclip order_show_icon"></i>
+      <span class="order_show_title">注文情報詳細</span>
+    </h3>
+  </div>
+  <div class="row order_show_box justify-content-center">
+    <div class="col-md-6 mr-2 order_show_box1">
+      <table class='table table-inverse'>
+        <h5 class="py-2 text-center order_show_box_title">注文情報</h5>
+        <tr>
+          <td>注文日</td>
+          <td><%= @order.created_at.strftime('%Y/%m/%d') %></td>
+        </tr>
+        <tr>
+          <td>配送先</td>
+          <td>
+            <%= "〒" + @order.postal_code %><br>
+            <%= @order.address %><br>
+            <%= @order.name %>
+          </td>
+        </tr>
+        <tr>
+          <td>支払方法</td>
+          <td><%= @order.payment_method_i18n %></td>
+        </tr>
+        <tr>
+          <td>ステータス</td>
+          <td><%= @order.status_i18n %></td>
+        </tr>
+      </table>
     </div>
-    <div class= "col-md-5 offset-1">
-      <table class='table table-hover table-inverse'>
-      <h4>請求情報</h4>
+    <div class="col-md-4 order_show_box2">
+      <table class='table table-inverse'>
+      <h5 class="pt-2 text-center order_show_box_title">請求情報</h5>
       　<tr>
           <td>商品合計</td>
           <td><%= @order.total_payment - @order.shipping_cost %></td>
@@ -45,11 +49,11 @@
       </table>
     </div>
   </div>
-  
-  <div class="row mt-2">
-    <div class="col-md-8">
-      <table class='table table-hover table-inverse'>
-      <h4>注文内容</h4>
+
+  <div class="row mt-2 mb-5 justify-content-center">
+    <div class="col-md-10 order_show_box3">
+      <table class='table table-inverse'>
+      <h5 class="py-2 text-center order_show_box_title">注文内容</h5>
       <thead>
         <tr>
           <td>商品</td>
@@ -70,5 +74,6 @@
       </tbody>
       </table>
     </div>
+  </div>
   </div>
 </div>

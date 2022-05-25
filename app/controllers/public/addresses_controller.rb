@@ -27,6 +27,8 @@ class Public::AddressesController < ApplicationController
   end
 
   def destroy
+    Address.find(params[:id]).destroy
+    redirect_to request.referer
   end
 
   private
