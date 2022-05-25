@@ -1,13 +1,16 @@
 <div class="container px-5 px-sm-0">
   <div class="row my-4">
-    <h3 class="col-5 text-center pb-2">商品詳細</h3>
+    <div class="col-1"></div>
+    <div class="col-3 ad_items_show_top">
+      <i class="fas fa-apple-alt ml-3 ad_items_show_icon"></i>
+      <span class="col-5 text-center pb-2 ml-2 ad_items_show_title">商品詳細</span>
+    </div>
   </div>
   <div class="row justify-content-center">
-    <div class="col-md-4 text-center">
+    <div class="col-md-4 mt-3 text-center">
       <%= image_tag @item.image, size:"300x320" %>
     </div>
-    <div class="col-md-1"></div>
-    <div class="col-md-6">
+    <div class="col-md-6 mt-3">
       <table class="table">
         <tr>
           <th>商品名</th>
@@ -42,6 +45,5 @@
       </table>
       <div class="text-center"><%= link_to "編集する", edit_admin_item_path(@item), class: "btn btn-stitch" %></div>
     </div>
-    <div class="col-md-1"></div>
   </div>
 </div>
