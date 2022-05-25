@@ -1,6 +1,14 @@
 <div class="container px-5 px-sm-0">
-  <div class="row my-5">
-    <h3 class="col-8 mb-4"><%= @customer.full_name %>さんの会員情報編集</h3>
+  <div class="row my-4">
+    <div class="col-2"></div>
+    <div class="col-3 ad_top">
+        <i class="fas fa-edit ml-3 ad_top_icon"></i>
+        <span class="ad_top_title ml-2"><%= @customer.full_name %>さんの会員情報編集</span>
+    </div>
+  </div>
+
+  <div class="row justify-content-center my-5">
+    <h3 class="col-8 mb-4"></h3>
     <div class='col-10'>
       <%= form_with model: @customer, url: admin_customer_path do |f| %>
       <%= render "layouts/error", obj: @customer %>
@@ -50,7 +58,7 @@
           </tr>
           <tr>
             <th></th>
-            <td><%= f.submit "変更を保存", class: "btn btn-success mt-3" %></td>
+            <td class="text-right"><%= f.submit "変更を保存", class: "btn btn-stitch-edit mt-3" %></td>
           </tr>
         </table>
       <% end %>

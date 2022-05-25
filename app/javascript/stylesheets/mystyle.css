@@ -1152,46 +1152,99 @@ vertical-align: middle;
   color: #FFF;
 }
 
-/* ジャンル一覧・追加*//*ジャンル編集*/
+/* ジャンル一覧・追加*/
 
-.genre_icon {
-  font-size: 3em;
-  color: #ffd6d6;
+.ad_top {
+  padding: 5px;
+  background-color: #7a8fbb;
+  border-radius: 30px;
 }
 
-
-.genre_title {
-  font-size: 30px;
-  font-family: "Noto Sans JP";
-  font-weight: bold;
-  color: #ffd6d6;
+.ad_top_icon {
+  font-size: 20px;
+  color: white;
 }
 
-.genre_item {
-  background-color: #ffe6e6;
-  font-family: "Noto Sans JP";
+.ad_top_title {
+  font-family: 'Noto Sans JP';
+  font-size: 16px;
+  color: white;
 }
 
-.genre_form {
-  background-color: #FFF;
-  font-family: "Noto Sans JP";
-}
-
-.genre_btn {
+.btn-stitch-edit {
   display: inline-block;
   padding: 0.5em 1em;
-  text-decoration: none;
-  background: #ffd6d6;/*ボタン色*/
+  background: #59b9c6;
   color: #FFF;
-  border-bottom: solid 4px #ccabab;
-  border-radius: 3px;
-}
-.genre_btn:active {
-  -webkit-transform: translateY(4px);
-  transform: translateY(4px);/*下に動く*/
-  border-bottom: none;/*線を消す*/
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 5px #59b9c6;
+  border: dotted 2px #FFF;
 }
 
- .genre_btn:hover {
-   color: #FFF;
- }
+.btn-stitch-edit:hover {
+  border: dotted 1px #FFF;
+  color: #FFF;
+}
+
+/*管理者側　注文履歴詳細*/
+
+
+.show_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.show_tr {
+  border-bottom: solid 2px white;
+}
+
+.show_tr:last-child {
+  border-bottom: none;
+}
+
+.show_th {
+  position: relative;
+  text-align: left;
+  width: 30%;
+  background-color: #52c2d0;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.show_th:after {
+  display: block;
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top:calc(50% - 10px);
+  right:-10px;
+  border-left: 10px solid #52c2d0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.show_td {
+  text-align: left;
+  width: 70%;
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 10px 0;
+}
+
+.order_total {
+  border: 2px dashed #7a8fbb;
+}
+
+.order_show_btn {
+  background: #668ad8;
+  color: #FFF;
+  border-radius: 4px;
+}
+
+.order_show_btn:hover {
+  background: #486299;
+  color: #FFF;
+  border-radius: 4px;
+}
