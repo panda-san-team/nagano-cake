@@ -998,18 +998,30 @@ a {
 }
 
 /*会員側会員一覧画面*/
-.customer_index_top, .ad_item_edit_top, .ad_items_new_top, .ad_customer_show_top {
+.customer_index_top,
+.ad_item_edit_top,
+.ad_items_new_top,
+.ad_customer_show_top,
+.ad_items_index_top {
   padding: 5px;
   background-color: #7a8fbb;
   border-radius: 30px;
 }
 
-.customer_index_icon, .ad_item_edit_icon, .ad_items_new_icon, .ad_customer_show_icon {
+.customer_index_icon,
+.ad_item_edit_icon,
+.ad_items_new_icon,
+.ad_customer_show_icon,
+.ad_items_index_icon {
   font-size: 20px;
   color: white;
 }
 
-.customer_index_title, .ad_item_edit_title, .ad_items_new_title, .ad_customer_show_title {
+.customer_index_title,
+.ad_item_edit_title,
+.ad_items_new_title,
+.ad_customer_show_title,
+.ad_items_index_title {
   font-family: 'Noto Sans JP';
   font-size: 16px;
   color: white;
