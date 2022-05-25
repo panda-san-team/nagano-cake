@@ -1,5 +1,5 @@
 class Public::OrdersController < ApplicationController
- before_action :authenticate_customer!
+  before_action :authenticate_customer!
 
   def new
     @order = Order.new
@@ -13,7 +13,7 @@ class Public::OrdersController < ApplicationController
       @order.name = current_customer.last_name + current_customer.first_name
     elsif params[:order][:select_address] == "1"
       unless current_customer.addresses.exists?
-        flash[:notice] = "登録済みの住所がありません"
+        flash[:order_notice] = "登録済みの住所がありません"
         render "new"
       else
         @address = Address.find(params[:order][:address_id])
@@ -23,7 +23,7 @@ class Public::OrdersController < ApplicationController
       end
     elsif params[:order][:select_address] == "2"
       if ( params[:order][:postal_code] || params[:order][:address] || params[:order][:name] ).empty?
-        flash[:notice] = "住所を正しく入力してください"
+        flash[:order_notice] = "住所を正しく入力してください"
         render "new"
       else
         @order.postal_code = params[:order][:postal_code]
@@ -31,7 +31,7 @@ class Public::OrdersController < ApplicationController
         @order.name = params[:order][:name]
       end
     else
-      flash[:notice] = "住所を選択してください"
+      flash[:order_notice] = "住所を選択してください"
       render "new"
     end
     @cart_items = current_customer.cart_items
@@ -83,12 +83,3 @@ class Public::OrdersController < ApplicationController
         )
     end
 end
-
-
-
-
-
-
-
-
-

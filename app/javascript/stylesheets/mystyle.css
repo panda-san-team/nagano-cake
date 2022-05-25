@@ -3,6 +3,19 @@ header {
   font-family: "Noto Sans JP";
 }
 
+body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 200px;
+  box-sizing: border-box;
+}
+
+footer {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+}
+
 .header-link {
    border: double 5px #f8db6f;
 }
@@ -88,6 +101,97 @@ a.link:hover {
 
 .list {
   font-size: 12px;
+}
+
+
+/*カスタマーの新規登録画面*/
+
+.customer-sign_in-form {
+  border: 1px solid #FEC200;
+  border-radius: 5px;
+  padding: 20px 40px;
+  background-color: rgba(255,255,255,0.9);
+}
+
+.sign_in-form-style {
+  height: 44px;
+  padding: 5px 5%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.customer-sign_in-submit {
+  width: 112px;
+  height: 37px;
+  border-radius: 19px;
+  background-color: #FEC200;
+  border: 1px solid #FEC200;
+  color: #fff;
+  font-weight: bold;
+}
+
+.customer-sign_in-submit:hover {
+  background-color: #fff;
+  border: 2px solid #FEC200;
+  color: #FEC200;
+  cursor: pointer;
+}
+
+.customer-sign_in-submit:focus {
+  outline: none;
+}
+
+
+/*カスタマーのログイン画面*/
+.login-bg {
+  background-image: url('/images/login_image.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+}
+
+.bg-opacity {
+  background-color: rgba(255,255,255,0.5);
+}
+
+.customer-login-form {
+  border: 1px solid #FEC200;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: rgba(255,255,255,0.9);
+}
+
+.login-form-style{
+  height: 44px;
+  padding: 5px 5%;
+  border: 1px solid #ccc;
+  border-radius: 27px;
+}
+
+.form-item .login-form-style:focus{
+  outline: none;
+  border: 2px solid #FEC200;
+}
+
+.customer-login-submit {
+ width: 112px;
+ height: 37px;
+ border-radius: 19px;
+ background-color: #FEC200;
+ border: 1px solid #FEC200;
+ color: #fff;
+ font-weight: bold;
+}
+
+.customer-login-submit:hover {
+  background-color: #fff;
+  border: 2px solid #FEC200;
+  color: #FEC200;
+  cursor: pointer;
+}
+
+.customer-login-submit :focus{
+  outline: none;
 }
 
 /*ここからカスタマーのtopページ*/
@@ -346,14 +450,14 @@ a {
   color: #515151
 }
 
-.table th {
+.my_info_table th {
   text-align: right;
   font-size: 15px;
   font-family: "Noto Sans JP";
   color: #515151
 }
 
-.table td {
+.my_info_table td {
   text-align: center;
   font-size: 18px;
   font-family: "Noto Sans JP";
@@ -604,6 +708,33 @@ a {
 
 /*ここから注文情報確認画面*/
 
+.confirm_icon {
+  font-size: 8rem;
+  color: #008080;
+}
+
+.order_btn {
+  background-color: #008080;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Noto Sans JP'
+}
+
+.order_btn:hover {
+  background-color: #478fb1;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Noto Sans JP'
+}
+
+.order_total_price {
+  font-size: 30px;
+}
+
 /*管理者・商品一覧ページ*/
 .btn-stitch {
   display: inline-block;
@@ -750,6 +881,139 @@ a {
 
 }
 
+/*ここから配送先一覧・登録画面*/
+
+.addresses_icon {
+  font-size: 8rem;
+  color: #d4dcd3;
+}
+
+.addresses_title {
+  font-weight: bold;
+  font-size: 40px;
+  font-family: 'Noto Sans JP';
+  color: #d4dcd3;
+}
+
+.addresses_table_area {
+  background-color: #d4dcd3;
+}
+
+.addresses_table {
+  background-color: #d4dcd3;
+  border-color:  #AFA58D;
+}
+
+.addresses_table th, .addresses_table td {
+  font-family: 'Noto Sans JP';
+}
+
+.addresses_edit_btn {
+  background-color: #AFA58D;
+  color: white;
+  font-size: 14px;
+  font-family: 'Noto Sans JP';
+}
+
+.addresses_edit_btn:hover {
+  background-color: #dd9d08;
+  color: white;
+  font-size: 14px;
+  font-family: 'Noto Sans JP';
+}
+
+.addresses_delete_btn {
+  background-color: #7E97A1;
+  color: white;
+  font-size: 14px;
+  font-family: 'Noto Sans JP';
+}
+
+.addresses_delete_btn:hover {
+  background-color: #A07E82;
+  color: white;
+  font-size: 14px;
+  font-family: 'Noto Sans JP';
+}
+
+.addresses_new_form {
+  padding-left: 10px;
+}
+
+.addresses_new_label  {
+  font-size: 13px;
+  font-family: 'Noto Sans JP';
+}
+
+.addresses_new_input {
+  background-color: #d4dcd3;
+  border: none;
+  border-radius: 8px;
+}
+
+.new_addresses_save {
+  background-color: #EDBBC4;
+  border: none;
+  font-size: 15px;
+  color :white;
+}
+
+.new_addresses_save:hover {
+  background-color: #ea5b75;
+  border: none;
+  font-size: 15px;
+  color :white;
+}
+
+/*アドミン側ログインページ*/
+.ad_log_in {
+  background-color: #E75685;
+  color: white;
+  font-weight: bold;
+}
+
+.ad_log_in:hover {
+  background-color: #B657E5;
+  color: white;
+  font-weight: bold;
+}
+
+/*thanksページ*/
+.thanks_page {
+  background-image: url('/images/spoon.png');
+  background-repeat: no-repeat;
+  background-position: 20% 32%;
+  background-color: #ffefcf;
+}
+
+.thanks_message {
+  font-family: 'Noto Sans JP';
+  font-weight: bold;
+  color: transparent;
+	background : rgba(0,0,0,1);
+	text-shadow :
+		0 0 0.1em rgba(255,255,255,0.05),
+		0.01em 0.04em 0.03em rgba(255,255,255,0.4);
+	-webkit-background-clip : text;
+}
+
+/*会員側会員一覧画面*/
+.customer_index_top {
+  padding: 5px;
+  background-color: #7a8fbb;
+  border-radius: 30px;
+}
+
+.customer_index_icon {
+  font-size: 20px;
+  color: white;
+}
+
+.customer_index_title {
+  font-family: 'Noto Sans JP';
+  font-size: 16px;
+  color: white;
+}
 /*注文履歴一覧ページ*/
 
 .order_icon {
