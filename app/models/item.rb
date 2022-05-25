@@ -23,7 +23,7 @@ class Item < ApplicationRecord
       file_path = Rails.root.join('app/assets/images/no_image.jpeg')
       image.attach(io: File.open(file_path), filename: 'no_image.jpg', content_type: 'image/jpeg')
     end
-    image.variant(resize_to_limit: [width, height]).processed
+    image.variant(resize_to_fit: [width, height]).processed
   end
 
   def with_tax_price
