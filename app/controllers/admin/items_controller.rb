@@ -1,11 +1,12 @@
 class Admin::ItemsController < ApplicationController
   before_action :authenticate_admin!
-  
-
 
   def index
-    @items = Item.all.page(params[:page]).per(10)
-
+    @items = Item.page(params[:page]).per(10)
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   def show
