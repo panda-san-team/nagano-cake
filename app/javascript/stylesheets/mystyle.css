@@ -1003,7 +1003,8 @@ a {
 .ad_items_new_top,
 .ad_customer_show_top,
 .ad_items_index_top,
-.ad_items_show_top {
+.ad_items_show_top,
+.ad_customer_orders_top{
   padding: 5px;
   background-color: #7a8fbb;
   border-radius: 30px;
@@ -1014,7 +1015,8 @@ a {
 .ad_items_new_icon,
 .ad_customer_show_icon,
 .ad_items_index_icon,
-.ad_items_show_icon {
+.ad_items_show_icon,
+.ad_customer_orders_icon{
   font-size: 20px;
   color: white;
 }
@@ -1024,7 +1026,8 @@ a {
 .ad_items_new_title,
 .ad_customer_show_title,
 .ad_items_index_title,
-.ad_items_show_title {
+.ad_items_show_title,
+.ad_customer_orders_title {
   font-family: 'Noto Sans JP';
   font-size: 16px;
   color: white;
