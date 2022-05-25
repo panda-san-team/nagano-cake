@@ -1,8 +1,8 @@
 <div class="container px-5 px-sm-0">
   <div><%= flash[:order_notice] %></div>
-  <div class="row mt-4 justify-content-center pb-2">
-    <div class="order-form-box col-md-8 justify-content-center">
-      <h3 class="order-title text-center">注文情報入力</h3>
+  <div class="row my-4 justify-content-center pb-2">
+    <div class="col-md-8 justify-content-center order-form-box">
+      <h3 class="order-title text-center my-3">注文情報入力</h3>
         <%= form_with model:@order, url: "/orders/confirm", method: :post, class:"order-form py-2 mx-5" do |f| %>
           <h5><i class="fas fa-cookie-bite"></i>お支払方法</h5>
           <div class="field form-group">

@@ -800,13 +800,13 @@ a {
 }
 
 /*商品詳細ページ*/
-.item-show {
+.item_show {
   background-color: #eaedf7;
   font-family: 'Noto Sans JP', sans-serif;
   position: relative;
 }
 
-.item-name {
+.item_name {
   padding: 1rem 2rem;
   border-top: 4px double #FFF;
   border-bottom: 4px double #FFF;
@@ -814,56 +814,21 @@ a {
   font-weight: 700;
 }
 
-.item-price {
+.item_price {
   position: absolute;
   bottom: 65px;
   right: 30px;
 }
 
-.item-cart-form {
+.item_cart_form {
   position: absolute;
-  bottom: 5px;
+  bottom: 10px;
   right: 10px;
-  display: flex;
   width: 320px;
 }
 
-.cp_ipselect {
-	overflow: hidden;
-	width: 30%;
-	text-align: center;
-}
-.cp_ipselect select {
-	width: 90%;
-	cursor: pointer;
-	text-indent: 0.01px;
-	text-overflow: ellipsis;
-	border: none;
-	outline: none;
-	background: transparent;
-	background-image: none;
-	box-shadow: none;
-	appearance: none;
-}
-.cp_ipselect select::-ms-expand {
-    display: none;
-}
-.cp_ipselect.cp_sl04 {
-  height: 70%;
-  position: absolute;
-  bottom: 5px;
-  border: 2px solid #1c305c;
-  border-radius: 50px;
-  background: #ffffff;
-  right: 150px;
-}
 
-.cp_ipselect.cp_sl04 select {
-	padding: 8px 38px 8px 8px;
-	color: #1c305c;
-}
-
-.cart-button {
+.cart_button {
   border-radius: 25px;
   font-weight: bold;
   padding: 1em 0.5em;
@@ -876,28 +841,27 @@ a {
 /*注文情報入力ページ*/
 
 .order-form-box {
-  background-color: #f7f6fb;
+  background-color: #ffffe5;
   font-family: 'Noto Sans JP', sans-serif;
-  color: #6b395f;
+  color: #996776;
   position: relative;
 }
 
 .order-title {
-  color: #6b395f;
+  color: #996776;
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: bold;
-  border-bottom: dashed 2px #331b2d;
 }
 
 .order-submit-btn {
   position: absolute;
   bottom: 10px;
   right: 20px;
-  background-color: #6b395f;
+  background-color: #996776;
   color: #FFF;
   border-radius: 20px;
   height: 40px;
-  outline: none
+  border: 1px solid #66444e;
 
 }
 
@@ -1124,12 +1088,12 @@ vertical-align: middle;
 /*配送先編集ページ*/
 
 .address_edit_icon {
-  font-size: 3em;
+  font-size: 5em;
   color: #68a9cf;
 }
 
 .address_edit_title {
-  font-size: 30px;
+  font-size: 40px;
   font-family: "Noto Sans JP";
   font-weight: bold;
   color: #68a9cf;
@@ -1172,46 +1136,99 @@ vertical-align: middle;
   color: #FFF;
 }
 
-/* ジャンル一覧・追加*//*ジャンル編集*/
+/* ジャンル一覧・追加*/
 
-.genre_icon {
-  font-size: 3em;
-  color: #ffd6d6;
+.ad_top {
+  padding: 5px;
+  background-color: #7a8fbb;
+  border-radius: 30px;
 }
 
-
-.genre_title {
-  font-size: 30px;
-  font-family: "Noto Sans JP";
-  font-weight: bold;
-  color: #ffd6d6;
+.ad_top_icon {
+  font-size: 20px;
+  color: white;
 }
 
-.genre_item {
-  background-color: #ffe6e6;
-  font-family: "Noto Sans JP";
+.ad_top_title {
+  font-family: 'Noto Sans JP';
+  font-size: 16px;
+  color: white;
 }
 
-.genre_form {
-  background-color: #FFF;
-  font-family: "Noto Sans JP";
-}
-
-.genre_btn {
+.btn-stitch-edit {
   display: inline-block;
   padding: 0.5em 1em;
-  text-decoration: none;
-  background: #ffd6d6;/*ボタン色*/
+  background: #59b9c6;
   color: #FFF;
-  border-bottom: solid 4px #ccabab;
-  border-radius: 3px;
-}
-.genre_btn:active {
-  -webkit-transform: translateY(4px);
-  transform: translateY(4px);/*下に動く*/
-  border-bottom: none;/*線を消す*/
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 5px #59b9c6;
+  border: dotted 2px #FFF;
 }
 
- .genre_btn:hover {
-   color: #FFF;
- }
+.btn-stitch-edit:hover {
+  border: dotted 1px #FFF;
+  color: #FFF;
+}
+
+/*管理者側　注文履歴詳細*/
+
+
+.show_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.show_tr {
+  border-bottom: solid 2px white;
+}
+
+.show_tr:last-child {
+  border-bottom: none;
+}
+
+.show_th {
+  position: relative;
+  text-align: left;
+  width: 30%;
+  background-color: #52c2d0;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.show_th:after {
+  display: block;
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top:calc(50% - 10px);
+  right:-10px;
+  border-left: 10px solid #52c2d0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.show_td {
+  text-align: left;
+  width: 70%;
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 10px 0;
+}
+
+.order_total {
+  border: 2px dashed #7a8fbb;
+}
+
+.order_show_btn {
+  background: #668ad8;
+  color: #FFF;
+  border-radius: 4px;
+}
+
+.order_show_btn:hover {
+  background: #486299;
+  color: #FFF;
+  border-radius: 4px;
+}
