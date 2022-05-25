@@ -873,10 +873,13 @@ vertical-align: middle;
   right: 3px;
 }
 
-.address_save_btn:active, .address_save_btn:link, .address_save_btn:visited {
+.address_save_btn:active {
   -webkit-transform: translateY(4px);
   transform: translateY(4px);/*下に動く*/
   border-bottom: none;/*線を消す*/
+}
+
+.address_save_btn:hover {
   color: #FFF;
 }
 
@@ -885,42 +888,46 @@ vertical-align: middle;
   color: #FFF;
 }
 
-/* ジャンル一覧・追加*/
+/* ジャンル一覧・追加*//*ジャンル編集*/
 
-.genre_index_icon {
+.genre_icon {
   font-size: 3em;
-  color: #3bccbe;
+  color: #ffd6d6;
 }
 
 
-.genre_index_title {
+.genre_title {
   font-size: 30px;
   font-family: "Noto Sans JP";
   font-weight: bold;
-  color: #3bccbe;
+  color: #ffd6d6;
 }
 
-.genre_index_item {
-  background-color: #e5fff2;
+.genre_item {
+  background-color: #ffe6e6;
   font-family: "Noto Sans JP";
 }
 
-.genre_index {
+.genre_form {
   background-color: #FFF;
   font-family: "Noto Sans JP";
 }
 
-.genre_index_btn {
+.genre_btn {
   display: inline-block;
   padding: 0.5em 1em;
   text-decoration: none;
-  background: #40d0e0;/*ボタン色*/
+  background: #ffd6d6;/*ボタン色*/
   color: #FFF;
-  border-bottom: solid 4px #2c998e;
+  border-bottom: solid 4px #ccabab;
   border-radius: 3px;
 }
-.genre_index_btn:active {
+.genre_btn:active {
   -webkit-transform: translateY(4px);
   transform: translateY(4px);/*下に動く*/
   border-bottom: none;/*線を消す*/
 }
+
+ .genre_btn:hover {
+   color: #FFF;
+ }
