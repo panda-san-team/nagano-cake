@@ -891,4 +891,20 @@ a {
 	-webkit-background-clip : text;
 }
 
+/*会員側会員一覧画面*/
+.customer_index_top {
+  padding: 5px;
+  background-color: #7a8fbb;
+  border-radius: 30px;
+}
 
+.customer_index_icon {
+  font-size: 20px;
+  color: white;
+}
+
+.customer_index_title {
+  font-family: 'Noto Sans JP';
+  font-size: 16px;
+  color: white;
+}
