@@ -1,0 +1,17 @@
+<div class="container px-5 px-sm-0">
+  <div class="row my-4">
+    <div class="col-2"></div>
+    <div class="col-3 ad_items_index_top">
+      <i class="fas fa-store ml-3 ad_items_index_icon"></i>
+      <span class="pb-2 ml-2 ad_items_index_title">商品一覧</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8 mx-auto pb-2 text-right">
+      <%= link_to "商品追加", new_admin_item_path, class:"btn-stitch" %>
+    </div>
+    <div id="paginate" class="col-8 mt-2 mx-auto">
+      <%= render 'index', items: @items %>
+    </div>
+  </div>
+</div>

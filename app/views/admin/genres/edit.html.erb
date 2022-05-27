@@ -1,0 +1,28 @@
+<div class="container px-5 px-sm-0">
+  <div class="row my-4">
+    <div class="col-2"></div>
+    <div class="col-3 ad_top">
+        <i class="fas fa-edit ml-3 ad_top_icon"></i>
+        <span class="ad_top_title ml-2">ジャンル編集</span>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-md-8 mx-auto px-5 py-3 mb-3 genre_item">
+      <%= render 'layouts/error', obj: @genre %>
+      <%= form_with model: @genre, url: admin_genre_path(@genre), local:true, class:"genre_form" do |f| %>
+        <table class="table">
+          <tr>
+            <th>ジャンル名</th>
+            <td>
+              <%= f.text_field :name %>
+            </td>
+            <td>
+              <%= f.submit "編集を保存", class: "btn btn-stitch-edit" %>
+            </td>
+          </tr>
+        </table>
+      <% end %>
+    </div>
+  </div>
+</div>

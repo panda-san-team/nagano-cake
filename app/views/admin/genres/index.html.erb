@@ -1,0 +1,49 @@
+<div class="container px-5 px-sm-0">
+  <div class="row my-4">
+    <div class="col-2"></div>
+    <div class="col-3 ad_top">
+        <i class="fas fa-birthday-cake ml-3 ad_top_icon"></i>
+        <span class="ad_top_title ml-2">ジャンル一覧・追加</span>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-md-8 mx-auto px-5 pt-4 genre_item">
+      <%= form_with model: @genre, url: admin_genres_path, local:true, class:"genre_form" do |f| %>
+        <table class="table">
+          <tr>
+            <th>ジャンル名</th>
+            <td>
+              <%= f.text_field :name %>
+            </td>
+            <td>
+              <%= f.submit "新規登録", class: "btn btn-stitch" %>
+            </td>
+          </tr>
+        </table>
+      <% end %>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-md-8 mx-auto px-5 py-3 mb-3 genre_item">
+      <table class="table text-center genre_form">
+        <thead class="thead-light">
+          <tr>
+            <th>ジャンル</th>
+            <th colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody>
+        <% @genres.each do |genre| %>
+          <tr>
+            <td><%= genre.name %></td>
+            <td></td>
+            <td>
+              <%= link_to "編集する", edit_admin_genre_path(genre), class: "btn btn-stitch-edit" %>
+            </td>
+          </tr>
+        <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,1274 @@
+header {
+  border-bottom: 4px dashed #7a8fbb;
+  font-family: "Noto Sans JP";
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 200px;
+  box-sizing: border-box;
+}
+
+footer {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+}
+
+.header-link {
+   border: double 5px #f8db6f;
+}
+
+.header-link:hover {
+   background-color: #f8db6f;
+}
+
+.ad-footer {
+   height: 80px;
+   background-color: #E3ECFF;
+ }
+
+.customer-footer {
+   height: 200px;
+   padding: 20px 0px 20px;
+   background-color: #E3ECFF;
+ }
+
+.color {
+   color: #515151;
+}
+
+.pagination {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.pagination li a {
+    border: none;
+    color: #2f3640;
+}
+
+.page-item.active .page-link {
+    background-color: #FEC200;
+}
+
+.page-item:first-child .page-link {
+    border-radius: 0;
+}
+
+.page-item:last-child .page-link {
+    border-radius: 0;
+}
+
+.pagination li a:hover {
+    background-color: #FEC200;
+    color: #fff
+}
+
+.pagination li a:focus {
+    background-color: #FEC200;
+    color: #fff
+}
+
+.link {
+    text-decoration: none;
+    color: black ;
+}
+a.link:hover {
+   color: #515151;
+}
+
+
+.field_with_errors {
+  display: contents;
+}
+
+/*カスタマーのヘッダー*/
+
+.header-name {
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+  color: #4C4C4C;
+}
+
+.nav-link:hover {
+  border-bottom: 3px;
+  border-bottom-color:#ffd700 !important;
+}
+
+.list {
+  font-size: 12px;
+}
+
+
+/*カスタマーの新規登録画面*/
+.sign_up-bg {
+  background-image: url('/images/signup_image.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 885px;
+}
+.customer-sign_up-form {
+  width: 80%;
+  border: 1px solid #FEC200;
+  border-radius: 5px;
+  padding: 20px 40px;
+  background-color: rgba(255,255,255,0.9);
+}
+
+.sign_up-form-style {
+  height: 44px;
+  padding: 5px 5%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.customer-sign_up-submit {
+  width: 112px;
+  height: 37px;
+  border-radius: 19px;
+  background-color: #FEC200;
+  border: 1px solid #FEC200;
+  color: #fff;
+  font-weight: bold;
+}
+
+.customer-sign_up-submit:hover {
+  background-color: #fff;
+  border: 2px solid #FEC200;
+  color: #FEC200;
+  cursor: pointer;
+}
+
+.customer-sign_up-submit:focus {
+  outline: none;
+}
+
+
+/*カスタマーのログイン画面*/
+.login-bg {
+  background-image: url('/images/login_image.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 660px;
+}
+
+.bg-opacity {
+  background-color: rgba(255,255,255,0.5);
+}
+
+.customer-login-form {
+  border: 1px solid #FEC200;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: rgba(255,255,255,0.9);
+}
+
+.login-form-style{
+  height: 44px;
+  padding: 5px 5%;
+  border: 1px solid #ccc;
+  border-radius: 27px;
+}
+
+.form-item .login-form-style:focus{
+  outline: none;
+  border: 2px solid #FEC200;
+}
+
+.customer-login-submit {
+ width: 112px;
+ height: 37px;
+ border-radius: 19px;
+ background-color: #FEC200;
+ border: 1px solid #FEC200;
+ color: #fff;
+ font-weight: bold;
+}
+
+.customer-login-submit:hover {
+  background-color: #fff;
+  border: 2px solid #FEC200;
+  color: #FEC200;
+  cursor: pointer;
+}
+
+.customer-login-submit :focus{
+  outline: none;
+}
+
+/*ここからカスタマーのtopページ*/
+
+ .main-visual {
+   background-image: url('/images/top_image.jpeg');
+   background-size: cover;
+   height: 500px;
+ }
+
+.main-visual-content {
+  font-weight: bold;
+  color: #4C4C4C;
+  text-shadow: 1px 2px 3px #808080;
+  height: 500px;
+  width: 400px;
+  background-color: rgba(227, 236, 255, 0.6);
+  text-align: center;
+  padding-top: 100px;
+  font-family: "Noto Sans JP";
+}
+
+.new-items-title {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #4c4c4c;
+  font-family: "Noto Sans JP";
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.new-items-content {
+   transition: 0.3s;
+   background-color: #f6f9ff;
+}
+
+.new-items-content:hover {
+  transition: 0.3s;
+  top: -8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.new-items-body {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Noto Sans JP";
+}
+
+.new-items-img {
+  max-width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.new-items-img:hover {
+  transition: 0.3s;
+  top: -3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.new-items-content-body {
+  margin-top: 3px;
+  text-align: left;
+}
+
+.new-items-name {
+  font-size: 13px;
+  font-family: "Noto Sans JP";
+  color: #4C4C4C;
+}
+
+.new-items-price span {
+  font-size: 12px;
+}
+
+.new-items-price strong {
+  font-size: 18px;
+  font-weight: bold;
+  color: #666666;
+}
+
+.new-items-price span {
+  color: #666666;
+}
+
+.top_to_show {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  background-color: #FFBF00;
+  border: solid;
+  border-color: #ffffcc;
+  border-radius: 50px;
+  border-width: 3px;
+}
+
+.top_to_index {
+  position: relative;
+  margin-top: 1rem;
+  margin-left: 70px;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #4C4C4C;
+  width: 200px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1),
+              0 1px 6px rgba(0, 0, 0, 0.05),
+              0 8px 8px rgba(0, 0, 0, 0.1),
+              0 16px 16px rgba(0, 0, 0, 0.1),
+              8px 32px 32px rgba(0, 0, 0, 0.15),
+              8px 64px 64px rgba(0, 0, 0, 0.15);
+}
+
+.top_to_index:before {
+  content: '';
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  left: -25px;
+  bottom: 12px;
+  width: 15px;
+  height: 15px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1),
+              0 1px 6px rgba(0, 0, 0, 0.05),
+              0 8px 8px rgba(0, 0, 0, 0.1),
+              0 16px 16px rgba(0, 0, 0, 0.1),
+              8px 32px 32px rgba(0, 0, 0, 0.15),
+              8px 64px 64px rgba(0, 0, 0, 0.15);
+}
+
+.top_to_index:after {
+ content: '';
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  left: -40px;
+  bottom: 10px;
+  width: 8px;
+  height: 8px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1),
+              0 1px 6px rgba(0, 0, 0, 0.05),
+              0 8px 8px rgba(0, 0, 0, 0.1),
+              0 16px 16px rgba(0, 0, 0, 0.1),
+              8px 32px 32px rgba(0, 0, 0, 0.15),
+              8px 64px 64px rgba(0, 0, 0, 0.15);
+}
+
+.top_to_index:hover {
+  position: relative;
+  margin-left: 70px;
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background-color: #4C4C4C;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1),
+              0 1px 6px rgba(0, 0, 0, 0.05),
+              0 8px 8px rgba(0, 0, 0, 0.1),
+              0 16px 16px rgba(0, 0, 0, 0.1),
+              8px 32px 32px rgba(0, 0, 0, 0.15),
+              8px 64px 64px rgba(0, 0, 0, 0.15);
+}
+
+.top_to_index:hover:before {
+  content: '';
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  left: -25px;
+  bottom: 12px;
+  width: 15px;
+  height: 15px;
+  background-color: #4C4C4C;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1),
+              0 1px 6px rgba(0, 0, 0, 0.05),
+              0 8px 8px rgba(0, 0, 0, 0.1),
+              0 16px 16px rgba(0, 0, 0, 0.1),
+              8px 32px 32px rgba(0, 0, 0, 0.15),
+              8px 64px 64px rgba(0, 0, 0, 0.15);
+}
+
+.top_to_index:hover:after {
+ content: '';
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  left: -40px;
+  bottom: 10px;
+  width: 8px;
+  height: 8px;
+  background-color: #4C4C4C;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1),
+              0 1px 6px rgba(0, 0, 0, 0.05),
+              0 8px 8px rgba(0, 0, 0, 0.1),
+              0 16px 16px rgba(0, 0, 0, 0.1),
+              8px 32px 32px rgba(0, 0, 0, 0.15),
+              8px 64px 64px rgba(0, 0, 0, 0.15);
+}
+
+.search-form {
+   margin-left: 3px;
+}
+
+.form {
+  margin-left: 3px;
+  background-color: #e3ecff;
+}
+
+.search-btn {
+  padding:1px !important;
+  border:none !important;
+  background-color:white !important;
+  box-shadow:none !important;
+}
+
+/*ここからマイページ*/
+.my-page-info {
+  background-color: #E9D1DD;
+}
+
+
+.my_page_icon {
+  font-size: 8em;
+  color: #E9D1DD;
+}
+
+.title_h3 {
+  color: #E9D1DD;
+  font-size: 40px;
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+}
+
+.my-page-visual {
+  background-image: url('/images/cup_cake3.png');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: left 100% top;
+}
+
+.info-title {
+  font-size: 19px;
+  font-family: "Noto Sans JP";
+  color: #515151
+}
+
+.info_to_edit {
+  background-color: #d5a6bd;
+  border-color: #d5a6bd;
+  font-family: "Noto Sans JP";
+  color: #515151
+}
+
+.my_info_table th {
+  text-align: right;
+  font-size: 15px;
+  font-family: "Noto Sans JP";
+  color: #515151
+}
+
+.my_info_table td {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Noto Sans JP";
+  color: #515151
+}
+
+.info_to_order_index {
+  margin-left: 3px;
+  background-color: #d5a6bd;
+  border-color: #d5a6bd;
+  font-family: "Noto Sans JP";
+  color: #515151
+}
+
+.info_to_address_index {
+  background-color: #d5a6bd;
+  border-color: #d5a6bd;
+  font-family: "Noto Sans JP";
+  color: #515151
+}
+
+/*ここから会員情報編集ページ*/
+
+.info_edit_page_icon {
+  font-size: 8em;
+  color: #ffefcf;
+}
+
+.info_edit_title {
+  color: #ffefcf;
+  font-size: 40px;
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+}
+
+.info_edit_form {
+  font-family: "Noto Sans JP";
+  background-color: #ffefcf;
+  color: #515151;
+}
+
+.input_area {
+  border: 2px solid #ccbfa5;
+  border-radius: 5px;
+}
+
+.info_edit_save, .customer_out {
+  background-color: #7f7767;
+}
+
+.info_edit_save:hover, .customer_out:hover {
+  background-color: #ccbfa5;
+}
+
+/*ここから退会確認画面*/
+.quit_confirm_page {
+  background-image: url('/images/honey.png');
+  background-size: cover;
+}
+
+.quit_confirm {
+  margin-top: 30px;
+  font-size: 30px;
+  font-family: "Noto Sans JP";
+  color: #515151;
+}
+
+.quit_confirm_message {
+  font-family: "Noto Sans JP";
+  color: #515151;
+}
+
+.not_out {
+  background-color: #fec200;
+  border-color: #fec200;
+  color: white;
+  font-weight: bold;
+}
+
+.out_customer {
+  background-color: #515151;
+  border-color: #515151;
+  color: white;
+}
+
+/*ここから商品一覧ページ*/
+
+.index_items {
+  font-family: "Noto Sans JP";
+  color: #515151;
+}
+
+.items_index {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.items_index_title {
+ font-family: "Noto Sans JP";
+ font-size: 48px;
+ font-weight: bold;
+ fill: #7a8fbb;
+}
+.items_index_count {
+ font-family: "Noto Sans JP";
+ font-size: 24px;
+ fill: #7a8fbb;
+}
+
+.items_index_item {
+  width: 24%;
+  margin: 4px;
+  background-color: #f6f9ff;
+}
+
+.items_index_item:hover {
+  top: -8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.items_index_item_image {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.items_index_item_img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.items_index_item_body {
+  padding: 20px;
+  text-align: left;
+}
+
+ .items_index_item_name {
+  font-family: "Noto Sans JP";
+  color: #515151;
+  font-weight: bold;
+}
+
+.items-index_item_price {
+  color: #515151;
+  font-size: 18px;
+  font-weight: bold !important;
+}
+
+/*ここからカート内一覧*/
+.cart_icon {
+  font-size: 8em;
+  color: #e6e6fa;
+}
+
+.cart_items {
+  background-color: #e6e6fa;
+}
+
+.cart_title {
+  font-size: 40px;
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+  color: #e6e6fa;
+}
+
+.cart_items_delete {
+  font-size: 14px;
+  font-weight: bold;
+  color: #515151;
+  background-color: #fac8a8;
+  border-color: #fac8c8;
+}
+
+.cart_items_table {
+  background-color: white;
+}
+
+.cart_items_table th {
+  text-align: center;
+  font-family: "Noto Sans JP";
+  color: #515151;
+}
+
+.cart_items_img {
+  padding: 10px 0;
+}
+
+.cart_items_amount_change {
+  font-size: 12px;
+  font-weight: bold;
+  background-color: white;
+  border: solid 1px #7a7a99;
+  color: #515151;
+}
+
+.cart_items_amount_change:hover {
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #a3a3cc;
+  border: solid 1px #a3a3cc;
+  color: #515151;
+}
+
+.cart_items_item_delete {
+  font-size: 12px;
+  font-weight: bold;
+  background-color: white;
+  border: solid 1px #7a7a99;
+  color: #515151;
+}
+
+.cart_items_item_delete:hover {
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #a3a3cc;
+  border: solid 1px #a3a3cc;
+  color: #515151;
+}
+
+.cart_to_top {
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #c8c8fa;
+  border-color: #c8c8fa;
+  color: white;
+}
+
+.cart_to_top:hover {
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #bcbccc;
+  border-color: #bcbccc;
+  color: white;
+}
+
+.cart_to_order {
+  font-size: 14px;
+  font-weight: bold;
+  color: #515151;
+  background-color: #fafac8;
+  border-color: #fafac8;
+}
+
+.cart_to_order:hover {
+  font-size: 14px;
+  font-weight: bold;
+  color: #515151;
+  background-color: #cccca3;
+  border-color: #cccca3;
+}
+
+.cart_items_total_price {
+  text-align: center;
+  background-color: white;
+}
+
+.cart_items_total_price span {
+  text-align: center !important;
+}
+
+
+/*ここから注文情報確認画面*/
+
+.confirm_icon {
+  font-size: 8rem;
+  color: #008080;
+}
+
+.order_btn {
+  background-color: #008080;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Noto Sans JP'
+}
+
+.order_btn:hover {
+  background-color: #478fb1;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Noto Sans JP'
+}
+
+.order_total_price {
+  font-size: 30px;
+}
+
+/*管理者・商品一覧ページ*/
+.btn-stitch {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background: #668ad8;
+  color: #FFF;
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 5px #668ad8;
+  border: dotted 2px #FFF;
+}
+
+.btn-stitch:hover {
+  border: dotted 1px #FFF;
+  color: #FFF;
+}
+
+/*アバウトページ*/
+.about-main-visual {
+  position: relative;
+  background-image: url('/images/image1.jpg');
+  background-size: cover;
+  width: 800px;
+  height: 470px;
+}
+
+.about-main-visual-title {
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  background-color: #FFF;
+  opacity: 0.5;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 30px;
+  text-shadow:2px 2px 3px #cccccc;
+}
+
+.about-main-visual-content {
+  color: #330000;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #ffffcc;
+  opacity: 0.7;
+
+}
+
+/*商品詳細ページ*/
+.item_show {
+  background-color: #eaedf7;
+  font-family: 'Noto Sans JP', sans-serif;
+  position: relative;
+}
+
+.item_name {
+  padding: 1rem 2rem;
+  border-top: 4px double #FFF;
+  border-bottom: 4px double #FFF;
+  color: #1c305c;
+  font-weight: 700;
+}
+
+.item_price {
+  position: absolute;
+  bottom: 65px;
+  right: 30px;
+}
+
+.item_cart_form {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 320px;
+}
+
+
+.cart_button {
+  border-radius: 25px;
+  font-weight: bold;
+  padding: 1em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #1c305c;
+  transition: .4s;
+}
+
+/*注文情報入力ページ*/
+
+.order-form-box {
+  background-color: #ffffe5;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #996776;
+  position: relative;
+}
+
+.order-title {
+  color: #996776;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+}
+
+.order-submit-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  background-color: #996776;
+  color: #FFF;
+  border-radius: 20px;
+  height: 40px;
+  border: 1px solid #66444e;
+
+}
+
+/*ここから配送先一覧・登録画面*/
+
+.addresses_icon {
+  font-size: 8rem;
+  color: #d4dcd3;
+}
+
+.addresses_title {
+  font-weight: bold;
+  font-size: 40px;
+  font-family: 'Noto Sans JP';
+  color: #d4dcd3;
+}
+
+.addresses_table_area {
+  background-color: #d4dcd3;
+}
+
+.addresses_table {
+  background-color: #d4dcd3;
+  border-color:  #AFA58D;
+}
+
+.addresses_table th, .addresses_table td {
+  font-family: 'Noto Sans JP';
+}
+
+.addresses_edit_btn {
+  background-color: #AFA58D;
+  color: white;
+  font-size: 14px;
+  font-family: 'Noto Sans JP';
+}
+
+.addresses_edit_btn:hover {
+  background-color: #dd9d08;
+  color: white;
+  font-size: 14px;
+  font-family: 'Noto Sans JP';
+}
+
+.addresses_delete_btn {
+  background-color: #7E97A1;
+  color: white;
+  font-size: 14px;
+  font-family: 'Noto Sans JP';
+}
+
+.addresses_delete_btn:hover {
+  background-color: #A07E82;
+  color: white;
+  font-size: 14px;
+  font-family: 'Noto Sans JP';
+}
+
+.addresses_new_form {
+  padding-left: 10px;
+}
+
+.addresses_new_label  {
+  font-size: 13px;
+  font-family: 'Noto Sans JP';
+}
+
+.addresses_new_input {
+  background-color: #d4dcd3;
+  border: none;
+  border-radius: 8px;
+}
+
+.new_addresses_save {
+  background-color: #EDBBC4;
+  border: none;
+  font-size: 15px;
+  color :white;
+}
+
+.new_addresses_save:hover {
+  background-color: #ea5b75;
+  border: none;
+  font-size: 15px;
+  color :white;
+}
+
+/*アドミン側ログインページ*/
+.ad_log_in {
+  background-color: #E75685;
+  color: white;
+  font-weight: bold;
+}
+
+.ad_log_in:hover {
+  background-color: #B657E5;
+  color: white;
+  font-weight: bold;
+}
+
+/*thanksページ*/
+.thanks_page {
+  background-image: url('/images/spoon.png');
+  background-repeat: no-repeat;
+  background-position: 20% 32%;
+  background-color: #ffefcf;
+}
+
+.thanks_message {
+  font-family: 'Noto Sans JP';
+  font-weight: bold;
+  color: transparent;
+	background : rgba(0,0,0,1);
+	text-shadow :
+		0 0 0.1em rgba(255,255,255,0.05),
+		0.01em 0.04em 0.03em rgba(255,255,255,0.4);
+	-webkit-background-clip : text;
+}
+
+/*会員側会員一覧画面*/
+.customer_index_top,
+.ad_item_edit_top,
+.ad_items_new_top,
+.ad_customer_show_top,
+.ad_items_index_top,
+.ad_items_show_top,
+.ad_customer_orders_top{
+  padding: 5px;
+  background-color: #7a8fbb;
+  border-radius: 30px;
+}
+
+.customer_index_icon,
+.ad_item_edit_icon,
+.ad_items_new_icon,
+.ad_customer_show_icon,
+.ad_items_index_icon,
+.ad_items_show_icon,
+.ad_customer_orders_icon{
+  font-size: 20px;
+  color: white;
+}
+
+.customer_index_title,
+.ad_item_edit_title,
+.ad_items_new_title,
+.ad_customer_show_title,
+.ad_items_index_title,
+.ad_items_show_title,
+.ad_customer_orders_title {
+  font-family: 'Noto Sans JP';
+  font-size: 16px;
+  color: white;
+}
+/*注文履歴一覧ページ*/
+
+.order_icon {
+  font-size: 8em;
+  color: #ffe5e5;
+}
+
+.order_index_title {
+  font-size: 40px;
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+  color: #ffe5e5;
+}
+
+.order_index {
+  background-color: #ffe5e5;
+}
+
+.order_index_table {
+  background-color: #FFF;
+}
+
+.order_index_table th, .order_index_table td {
+text-align: center;
+vertical-align: middle;
+}
+
+.order_index_btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #ff8e8e;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #cc7272;
+  border-radius: 3px;
+}
+.order_index_btn:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+  color: #FFF;
+}
+
+.order_index_btn:link, .order_index_btn:visited {
+  color: #FFF;
+}
+
+/*注文履歴詳細ページ*/
+.order_show_title {
+  font-size: 30px;
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+  color: #59b9c6;
+}
+
+.order_show_box {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #1f3134;
+}
+
+.order_show_box1 {
+  background-color: #e0ffef;
+  border: solid 2px #59b9c6;
+}
+
+.order_show_box2 {
+  background-color: #e0ffe0;
+  border: solid 2px #59b9c6;
+}
+
+.order_show_box3 {
+  background-color: #efffe0;
+  border: solid 2px #59b9c6;
+}
+
+.order_show_icon {
+  font-size: 2em;
+  color: #59b9c6;
+}
+
+.order_show_box_title {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #00a497;
+  font-weight: bold;
+}
+
+/*配送先編集ページ*/
+
+.address_edit_icon {
+  font-size: 5em;
+  color: #68a9cf;
+}
+
+.address_edit_title {
+  font-size: 40px;
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+  color: #68a9cf;
+}
+
+.address_edit_form {
+  background-color: #bbdbf3;
+}
+
+.address_form {
+  position: relative;
+  font-family: "Noto Sans JP";
+}
+
+.address_save_btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #409ecc;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #204f66;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 5px;
+  right: 3px;
+}
+
+.address_save_btn:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+.address_save_btn:hover {
+  color: #FFF;
+}
+
+.address_save_icon {
+  font-size: 2em;
+  color: #FFF;
+}
+
+/* ジャンル一覧・追加*/
+
+.ad_top {
+  padding: 5px;
+  background-color: #7a8fbb;
+  border-radius: 30px;
+}
+
+.ad_top_icon {
+  font-size: 20px;
+  color: white;
+}
+
+.ad_top_title {
+  font-family: 'Noto Sans JP';
+  font-size: 16px;
+  color: white;
+}
+
+.btn-stitch-edit {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background: #59b9c6;
+  color: #FFF;
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 5px #59b9c6;
+  border: dotted 2px #FFF;
+}
+
+.btn-stitch-edit:hover {
+  border: dotted 1px #FFF;
+  color: #FFF;
+}
+
+
+ .genre_btn:hover {
+   color: #FFF;
+ }
+
+ /*管理者側会員詳細ページ*/
+ .ad_customer_show_to_items_index {
+   padding: 0.5em 1em;
+   background-color: #66d9b4;
+   color: white;
+   border-radius: 4px;
+   box-shadow: 0px 0px 0px 5px #66d9b4;
+   border: dotted 2px #FFF;
+ }
+
+.ad_customer_show_to_items_index:hover {
+  border: dotted 1px #FFF;
+  color: #FFF;
+}
+/**/
+
+/*管理者側　注文履歴詳細*/
+
+
+.show_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.show_tr {
+  border-bottom: solid 2px white;
+}
+
+.show_tr:last-child {
+  border-bottom: none;
+}
+
+.show_th {
+  position: relative;
+  text-align: left;
+  width: 30%;
+  background-color: #52c2d0;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.show_th:after {
+  display: block;
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top:calc(50% - 10px);
+  right:-10px;
+  border-left: 10px solid #52c2d0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.show_td {
+  text-align: left;
+  width: 70%;
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 10px 0;
+}
+
+.order_total {
+  border: 2px dashed #7a8fbb;
+}
+
+.order_show_btn {
+  background: #668ad8;
+  color: #FFF;
+  border-radius: 4px;
+}
+
+.order_show_btn:hover {
+  background: #486299;
+  color: #FFF;
+  border-radius: 4px;
+}
+

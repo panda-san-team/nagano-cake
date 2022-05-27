@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-8 mt-5">
+      <i class="fas fa-edit address_edit_icon"></i>
+      <span class="address_edit_title">配送先編集</span>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-md-8 mb-3 py-2 address_edit_form">
+     <%= form_with model: @address, url: address_path, method: :patch, class:"address_form" do |f| %>
+         <div class="field form-group col">
+           <%= f.label :"郵便番号（ハイフンなし）", class:"col-md-3 control-label" %>
+           <%= f.text_field :postal_code, autofocus: true, class:"col-md-3 ml-1 form-control-static" %>
+         </div>
+
+         <div class="field form-group col">
+           <%= f.label :"住所", class:"col-sm-3 control-label" %>
+           <%= f.text_field :address, autofocus: true, class:"col-md-7 ml-1 form-control-static" %>
+         </div>
+
+         <div class="field form-group col">
+           <%= f.label :"宛名", class:"col-md-3 contrl-label" %>
+           <%= f.text_field :name, class:"col-md-3" %>
+         </div>
+
+         <div class="field form-group col">
+            <button type="submit" class="btn address_save_btn">
+              <i class="fas fa-save address_save_icon"></i> 変更を保存
+            </button>
+         </div>
+
+      <% end %>
+    </div>
+  </div>
+</div>

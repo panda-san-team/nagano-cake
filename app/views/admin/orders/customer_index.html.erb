@@ -1,0 +1,18 @@
+<div class="container px-5 px-sm-0">
+  <div class="row my-4">
+    <div class="col-2"></div>
+    <div class="col-4 ad_customer_orders_top">
+      <i class="fas fa-check-circle ad_customer_orders_icon ml-3"></i>
+      <span class="col-5 text-center pb-2 ad_customer_orders_title ml-2"><%= @customer.full_name %>さんの注文履歴一覧</span>
+    </div>
+  </div>
+  <div class="row">
+    <div id="paginate" class="col-8 mx-auto">
+      <% if @customer_orders.count > 0 %>
+        <%= render 'customer_index', customer_orders: @customer_orders %>
+      <% else %>
+        <p class="d-flex justify-content-center">注文された履歴がありません。</p>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="container px-5 px-sm-0">
+  <div class="row my-4">
+    <div class="col-2"></div>
+    <div class="col-3 ad_top">
+        <i class="fas fa-cart-arrow-down ml-3 ad_top_icon"></i>
+        <span class="ad_top_title ml-2">注文履歴一覧</span>
+    </div>
+  </div>
+  <div id="paginate" class="col-8 mx-auto">
+    <%= render 'index', orders: @orders %>
+  </div>
+</div>

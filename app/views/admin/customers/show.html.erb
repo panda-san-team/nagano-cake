@@ -1,0 +1,63 @@
+<div class="container px-5 px-sm-0">
+<div class="py-2 px-3"><%= flash[:success] %></div>
+  <div class="row my-5">
+    <div class="col-2"></div>
+    <div class="col-3 ad_customer_show_top">
+      <i class="fas fa-user-check ml-3 ad_customer_show_icon"></i>
+      <span class="ad_customer_show_title ml-2"><%= @customer.full_name %>さんの会員詳細</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class='col-8 mx-auto'>
+    <table class="table table-borderless">
+      <tr>
+        <th>会員ID</th>
+        <td><%= @customer.id %></td>
+      </tr>
+      <tr>
+        <th>氏名</th>
+        <td><%= @customer.full_name %></td>
+      </tr>
+      <tr>
+        <th>フリガナ</th>
+        <td><%= @customer.full_name_kana %></td>
+      </tr>
+      <tr>
+        <th>郵便番号</th>
+        <td><%= @customer.postal_code.to_s.insert(3, "-") %></td>
+      </tr>
+      <tr>
+        <th>住所</th>
+        <td><%= @customer.address %></td>
+      </tr>
+      <tr>
+        <th>電話番号</th>
+        <td><%= @customer.telephone_number %></td>
+      </tr>
+      <tr>
+        <th>メールアドレス</th>
+        <td><%= @customer.email %></td>
+      </tr>
+      <tr>
+        <th>会員ステータス</th>
+        <% if @customer.is_deleted == "有効" %>
+          <td class="text-success font-weight-bold"><%= @customer.is_deleted %></td>
+        <% else %>
+          <td class="text-black-50 font-weight-bold"><%= @customer.is_deleted %></td>
+        <% end %>
+      </tr>
+      <tr>
+        <th></th>
+        <td>
+          <div class="d-flex">
+          <%=link_to "編集する", edit_admin_customer_path(@customer), class: "btn btn-stitch col-3" %>
+          <%=link_to admin_customer_orders_path(@customer), class: "ml-5 btn ad_customer_show_to_items_index" do %>
+            <%= @customer.full_name %>さんの注文履歴一覧を見る
+          <% end %>
+          </div>
+        </td>
+      </tr>
+    </table>
+    </div>
+  </div>
+</div>
